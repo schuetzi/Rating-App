@@ -22,15 +22,12 @@ public class Homescreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
-        addListenerOnButton();
 
     }
 
-
-    private void playVideo() {
+    public void playVideo(View v) {
         setContentView(R.layout.film); //Change layout
         final VideoView videoView = (VideoView) findViewById(R.id.videoView); // search in XML File
-        getWindow().setFormat(PixelFormat.UNKNOWN);
         String path = "android.resource://mc004_035.rating_app/" + R.raw.intro; //get path
         final Uri pathFixed = Uri.parse(path);
         videoView.setVideoURI(pathFixed);
@@ -46,13 +43,11 @@ public class Homescreen extends Activity {
         });
     }
 
-    public void addListenerOnButton() {
-        imageButton = (ImageButton) findViewById(R.id.ButtonHomeFilm);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                playVideo();
-            }
-        });
+    public void showHerkunft(View v) {
+        setContentView(R.layout.herkunft);
+    }
+
+    public void getHomescreen(View v) {
+        setContentView(R.layout.homescreen);
     }
 }
