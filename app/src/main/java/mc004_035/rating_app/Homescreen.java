@@ -1,6 +1,7 @@
 package mc004_035.rating_app;
 
 import android.app.Activity;
+import android.graphics.PixelFormat;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,9 +29,10 @@ public class Homescreen extends Activity {
 
     private void playVideo() {
         setContentView(R.layout.film); //Change layout
-        VideoView videoView = (VideoView) findViewById(R.id.videoView); // search in XML File
+        final VideoView videoView = (VideoView) findViewById(R.id.videoView); // search in XML File
+        getWindow().setFormat(PixelFormat.UNKNOWN);
         String path = "android.resource://mc004_035.rating_app/" + R.raw.intro; //get path
-        Uri pathFixed = Uri.parse(path);
+        final Uri pathFixed = Uri.parse(path);
         videoView.setVideoURI(pathFixed);
         MediaController mediaController = new MediaController(Homescreen.this); //get Controllers for movie
         mediaController.setAnchorView(videoView);
@@ -38,11 +40,11 @@ public class Homescreen extends Activity {
         videoView.start();
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() { //wait till video is done
             public void onCompletion(MediaPlayer mp) {
-                setContentView(R.layout.homescreen); //change layout back to homescreen
+                finish();
+                startActivity(getIntent()); // return to homescreen
             }
         });
     }
-
 
     public void addListenerOnButton() {
         imageButton = (ImageButton) findViewById(R.id.ButtonHomeFilm);
@@ -52,6 +54,5 @@ public class Homescreen extends Activity {
                 playVideo();
             }
         });
-
     }
 }
