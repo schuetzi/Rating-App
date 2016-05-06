@@ -50,4 +50,6 @@ public class Homescreen extends Activity {
     public void getHomescreen(View v) {
         setContentView(R.layout.homescreen);
     }
+
+
 }

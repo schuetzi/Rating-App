@@ -7,54 +7,11 @@
     android:background="@drawable/background">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#C0C0C0">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:gravity="top|left">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/LeberkaesBild"
-                android:src="@drawable/leberkaes"
-                android:adjustViewBounds="true"
-                android:maxHeight="100dp"
-                android:maxWidth="500dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:gravity="right"
-            android:paddingRight="40dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/Logo"
-                android:src="@drawable/logo"
-                android:adjustViewBounds="true"
-                android:maxHeight="100dp"
-                android:maxWidth="500dp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:paddingTop="90dp"
+        android:gravity="center_horizontal">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -67,43 +24,46 @@
                 android:id="@+id/ButtonHomeVoting"
                 android:src="@drawable/voting"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
-                android:scaleType="fitCenter" />
+                android:maxHeight="310dp"
+                android:maxWidth="310dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
+            android:paddingTop="16dp">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonHomeQuality"
-                android:src="@drawable/quality"
-                android:maxWidth="290dp"
-                android:maxHeight="290dp"
+                android:src="@drawable/qualitaet"
+                android:maxWidth="310dp"
+                android:maxHeight="310dp"
                 android:scaleType="fitCenter"
-                android:adjustViewBounds="true"/>
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonHomeHandling"
                 android:src="@drawable/handling"
-                android:maxWidth="290dp"
-                android:maxHeight="290dp"
+                android:maxWidth="310dp"
+                android:maxHeight="310dp"
                 android:scaleType="fitCenter"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -112,7 +72,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center_horizontal">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -124,30 +84,31 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonHomeHerkunft"
                 android:src="@drawable/herkunft"
-                android:maxWidth="290dp"
-                android:maxHeight="290dp"
+                android:maxWidth="310dp"
+                android:maxHeight="310dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:onClick="showHerkunft"/>
+                android:onClick="showHerkunft"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp" />
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonHomeFilm"
                 android:src="@drawable/film"
-                android:maxWidth="290dp"
-                android:maxHeight="290dp"
+                android:maxWidth="310dp"
+                android:maxHeight="310dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:onClick="playVideo"/>
+                android:onClick="playVideo"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -159,11 +120,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonHomeReferenzen"
-                android:maxWidth="290dp"
-                android:maxHeight="290dp"
+                android:maxWidth="310dp"
+                android:maxHeight="310dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:src="@drawable/referenzen" />
+                android:src="@drawable/referenzen"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
     </LinearLayout>
 
