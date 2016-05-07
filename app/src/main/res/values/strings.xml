@@ -1,4 +1,37 @@
 <resources>
     <string name="app_name">Rating-App</string>
-    <string name="bauer1">Franz Dietachmair \n Sattledt</string>
+    <string name="NameBauer1">Franz Dietachmair</string>
+    <string name="OrtBauer1">Sattledt</string>
+    <string name="NameBauer2">Familie Edlinger</string>
+    <string name="OrtBauer2">Ried im Traunkreis</string>
+    <string name="NameBauer3">Günther Hubinger</string>
+    <string name="OrtBauer3">Wartberg</string>
+    <string name="NameBauer4">Günther Krennhuber</string>
+    <string name="OrtBauer4">Ried im Traunkreis</string>
+    <string name="NameBauer5">Robert Neubauer</string>
+    <string name="OrtBauer5">Eggendorf</string>
+    <string name="NameBauer6">Familie Pointner</string>
+    <string name="OrtBauer6">Hofkirchen</string>
+    <string name="NameBauer7">Josef Steinmair</string>
+    <string name="OrtBauer7">Kremsmünster</string>
+    <string name="NameBauer8">Georg Steiner</string>
+    <string name="OrtBauer8">Thalheim</string>
+
+    <string name="OhneGen">100% gentechnikfrei</string>
+    <string name="OhneGenText">Die Bauern unseres Vertrauens verwenden ausschließlich\ngentechnikfreie Futtermittel.</string>
+    <string name="amaTitel">AMA Gütesiegel</string>
+    <string name="amaText">Für unsere gourmetfeinen Produkte verarbeiten wir nur\nhochwertiges Fleisch das zu 100 % aus Österreich kommt!</string>
+    <string name="ohneFarbTitel">ohne künstliche Farbstoffe</string>
+    <string name="ohneFarbText">In unsere Produkte kommen keine künstliche Farbstoffe, nur das\nBeste aus der Natur!</string>
+    <string name="ohneVerdTitel">ohne Verdickungsmittel</string>
+    <string name="ohneVerdText">In unserer gesamten Produktpalette sind keine Verdickungsmittel\nenthalten!</string>
+
+    <string name="handlingVar1Titel">Variante 1: Leberkäseofen</string>
+    <string name="handlingVar1Text"><ol><li>first\n</li><li>second\n</li></ol></string>
+    <string name="handlingVar2Titel">Variante 2: Plattengrill</string>
+    <string name="handlingVar2Text"><ol><li>first\n</li><li>second\n</li></ol></string>
+    <string name="handlingVar3Titel">Variante 3: HSG</string>
+    <string name="handlingVar3Text"><ol><li>first\n</li><li>second\n</li></ol></string>
+
+
 </resources>

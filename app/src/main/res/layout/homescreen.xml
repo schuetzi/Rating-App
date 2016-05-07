@@ -45,7 +45,8 @@
                 android:maxHeight="310dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:onClick="getQualitaet"/>
         </LinearLayout>
 
         <LinearLayout
@@ -63,7 +64,8 @@
                 android:maxHeight="310dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:onClick="getHandling"/>
         </LinearLayout>
 
     </LinearLayout>

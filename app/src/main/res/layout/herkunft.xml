@@ -4,15 +4,178 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="130dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer1"
+                android:id="@+id/NameBauer1"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer2"
+                android:id="@+id/NameBauer2"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer3"
+                android:id="@+id/NameBauer3"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer4"
+                android:id="@+id/NameBauer4"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer1"
+                android:id="@+id/OrtBauer1"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:fontFamily="sans-serif"
+                android:typeface="serif"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer2"
+                android:id="@+id/OrtBauer2"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer3"
+                android:id="@+id/OrtBauer3"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer4"
+                android:id="@+id/OrtBauer4"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingBottom="20dp"
-        android:paddingTop="160dp">
+        android:paddingBottom="20dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -27,14 +190,19 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer1" />
+                android:src="@drawable/bauer1"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <ImageButton
                 android:id="@+id/ButtonBauer2"
@@ -44,13 +212,17 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer2" />
+                android:src="@drawable/bauer2"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
             <ImageButton
                 android:id="@+id/ButtonBauer3"
@@ -60,7 +232,10 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer3" />
+                android:src="@drawable/bauer3"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -76,17 +251,177 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer4" />
+                android:src="@drawable/bauer4"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer5"
+                android:id="@+id/NameBauer5"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer6"
+                android:id="@+id/NameBauer6"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer7"
+                android:id="@+id/NameBauer7"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/NameBauer8"
+                android:id="@+id/NameBauer8"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer5"
+                android:id="@+id/OrtBauer5"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:fontFamily="sans-serif"
+                android:typeface="serif"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer6"
+                android:id="@+id/OrtBauer6"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer7"
+                android:id="@+id/OrtBauer7"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/OrtBauer8"
+                android:id="@+id/OrtBauer8"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="#723915"
+                android:textSize="14px" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingTop="50dp">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -101,13 +436,19 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer5" />
+                android:src="@drawable/bauer5"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:touchscreenBlocksFocus="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <ImageButton
                 android:id="@+id/ButtonBauer6"
@@ -117,13 +458,17 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer6" />
+                android:src="@drawable/bauer6"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
 
             <ImageButton
                 android:id="@+id/ButtonBauer7"
@@ -133,7 +478,10 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer7" />
+                android:src="@drawable/bauer7"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
 
         <LinearLayout
@@ -149,7 +497,10 @@
                 android:maxHeight="290dp"
                 android:maxWidth="290dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bauer8" />
+                android:src="@drawable/bauer8"
+                android:onClick="getAnimationFade"
+                android:alpha="0.5"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -158,8 +509,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:orientation="horizontal"
-        android:paddingRight="60dp"
-        android:paddingTop="35dp">
+        android:paddingRight="86dp"
+        android:paddingTop="15dp">
 
 
         <Button
