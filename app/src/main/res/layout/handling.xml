@@ -13,15 +13,22 @@
         android:id="@+id/viewFlipper" >
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="1280dp"
+                android:layout_width="427dp"
                 android:layout_height="800dp"
-                android:gravity="center_horizontal"
+                android:gravity="left|bottom|end">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="match_parent"
                 android:paddingTop="130dp">
 
                 <ImageView
@@ -31,32 +38,108 @@
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:id="@+id/imageVar1"
+                    android:id="@+id/Leberkaeseofen"
                     android:src="@drawable/ofen"
                     android:layout_gravity="center" />
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="415dp"
-                    android:layout_gravity="left">
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/handlingVar1Titel"
+                    android:id="@+id/handlingVar1Titel"
+                    android:paddingTop="20dp" />
 
-                    <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/handlingVar1Text"
+                    android:id="@+id/handlingVar1Text"
+                    android:paddingTop="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/handlingVar1Titel"
-                        android:id="@+id/textView"
-                        android:paddingTop="20dp" />
+                        android:id="@+id/firstVarFirstBullet"
+                        android:src="@drawable/bullethole"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/handlingVar1Text"
-                        android:id="@+id/textView2"
-                        android:paddingTop="10dp" />
+                        android:id="@+id/firstVarSecBullet"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/firstVarThirdBullet"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp">
+
+                    <Button
+                        android:id="@+id/firstVarHome"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:onClick="getHomescreen"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="Home"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="800dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/firstVarNext"
+                        android:src="@drawable/next"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="right" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -64,15 +147,36 @@
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="1280dp"
+                android:layout_width="427dp"
                 android:layout_height="800dp"
-                android:gravity="center_horizontal"
+                android:gravity="left|center|center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thirdVarBack"
+                        android:src="@drawable/back"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="match_parent"
                 android:paddingTop="130dp" >
 
                 <ImageView
@@ -82,46 +186,128 @@
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:id="@+id/imageView"
+                    android:id="@+id/HSG"
                     android:src="@drawable/ofen"
                     android:layout_gravity="center" />
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="415dp"
-                    android:layout_gravity="left" >
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/handlingVar3Titel"
+                    android:id="@+id/handlingVar3Titel"
+                    android:paddingTop="20dp" />
 
-                    <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/handlingVar3Text"
+                    android:id="@+id/handlingVar3Text"
+                    android:paddingTop="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/handlingVar2Titel"
-                        android:id="@+id/textView3"
-                        android:paddingTop="20dp" />
+                        android:id="@+id/thirdVarFirstBull"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/handlingVar2Text"
-                        android:id="@+id/textView4"
-                        android:paddingTop="10dp" />
+                        android:id="@+id/thirdVarSecBull"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thirdVarThirdBull"
+                        android:src="@drawable/bullethole"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp" >
+
+                    <Button
+                        android:id="@+id/thirdVarHome"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:onClick="getHomescreen"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="Home"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="800dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal" >
+
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="1280dp"
+                android:layout_width="427dp"
                 android:layout_height="800dp"
-                android:gravity="center_horizontal"
+                android:layout_gravity="left"
+                android:gravity="center|center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/secVarBack"
+                        android:src="@drawable/back"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="match_parent"
                 android:paddingTop="130dp" >
 
                 <ImageView
@@ -131,32 +317,106 @@
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:id="@+id/imageView2"
+                    android:id="@+id/Plattengrill"
                     android:src="@drawable/ofen"
                     android:layout_gravity="center" />
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="415dp"
-                    android:layout_gravity="left" >
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/handlingVar2Titel"
+                    android:id="@+id/handlingVar2Titel"
+                    android:paddingTop="20dp" />
 
-                    <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/handlingVar2Text"
+                    android:id="@+id/handlingVar2Text"
+                    android:paddingTop="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/handlingVar3Titel"
-                        android:id="@+id/textView5"
-                        android:paddingTop="20dp" />
+                        android:id="@+id/secVarFirstBullet"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
 
-                    <TextView
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/handlingVar3Text"
-                        android:id="@+id/textView6"
-                        android:paddingTop="10dp" />
+                        android:id="@+id/secVarSecBullet"
+                        android:src="@drawable/bullethole"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/secVarThirdBullet"
+                        android:src="@drawable/bullet"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp" >
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:onClick="getHomescreen"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="Home"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="427dp"
+                android:layout_height="800dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/secVarNext"
+                        android:src="@drawable/next"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="right" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
