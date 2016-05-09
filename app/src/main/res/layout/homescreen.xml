@@ -127,7 +127,8 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:src="@drawable/referenzen"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:onClick="getReferenzen"/>
         </LinearLayout>
     </LinearLayout>
 

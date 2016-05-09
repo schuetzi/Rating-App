@@ -74,10 +74,15 @@ public class Homescreen extends Activity {
         viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
     }
 
+    public void getReferenzen(View v) {
+        setContentView(R.layout.referenzen);
+        viewFlipper = (ViewFlipper) findViewById(R.id.viewSecondFlipper);
+    }
+
     public void setAnimationFade(View v, int id) {
         final ImageButton myButton = (ImageButton) findViewById(id);
         ObjectAnimator animator = ObjectAnimator.ofFloat(myButton, View.ALPHA, 0.5f, 1f);
-        animator.setDuration(300); //ms
+        animator.setDuration(300); //msx
         animator.start();
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
@@ -149,13 +154,13 @@ public class Homescreen extends Activity {
         }
     }
 
-    public boolean onTouchEvent(MotionEvent touchevent) {
-        switch (touchevent.getAction()) {
+    public boolean onTouchEvent(MotionEvent touch) {
+        switch (touch.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                lastX = touchevent.getX();
+                lastX = touch.getX();
                 break;
             case MotionEvent.ACTION_UP:
-                float currentX = touchevent.getX();
+                float currentX = touch.getX();
                 // Handling left to right screen swap.
                 if (lastX < currentX) {
                     // If there aren't any other children, just break.
@@ -170,7 +175,7 @@ public class Homescreen extends Activity {
                 }
                 // Handling right to left screen swap.
                 if (lastX > currentX) {
-                    // If there is a child (to the left), kust break.
+                    // If there is a child (to the left), just break.
                     if (viewFlipper.getDisplayedChild() == 1)
                     break;
                     // Next screen comes in from right.

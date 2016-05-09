@@ -2,105 +2,105 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1"
+    android:background="@drawable/background"
     android:orientation="horizontal"
-    android:background="@drawable/background">
+    android:weightSum="1">
 
 
     <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewFlipper" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
-                android:gravity="left|bottom|end">
+                android:gravity="left|bottom|end"
+                android:orientation="vertical">
 
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:paddingTop="130dp">
 
                 <ImageView
+                    android:id="@+id/Leberkaeseofen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
                     android:maxHeight="300dp"
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/Leberkaeseofen"
-                    android:src="@drawable/ofen"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/ofen" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/handlingVar1Titel"
                     android:id="@+id/handlingVar1Titel"
-                    android:paddingTop="20dp" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/handlingVar1Text"
+                    android:paddingTop="20dp"
+                    android:text="@string/handlingVar1Titel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
                     android:id="@+id/handlingVar1Text"
-                    android:paddingTop="10dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/handlingVar1Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/firstVarFirstBullet"
-                        android:src="@drawable/bullethole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true"/>
+                        android:src="@drawable/bullethole" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/firstVarSecBullet"
-                        android:src="@drawable/bullet"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
-                        android:scaleType="fitCenter"
-                        android:adjustViewBounds="true"/>
-
-                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/firstVarThirdBullet"
-                        android:src="@drawable/bullet"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true"/>
+                        android:src="@drawable/bullet" />
+
+                    <ImageView
+                        android:id="@+id/firstVarThirdBullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullet" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:gravity="center"
+                    android:orientation="vertical"
                     android:paddingTop="10dp">
 
                     <Button
@@ -121,25 +121,25 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center|center_horizontal">
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal">
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/firstVarNext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/firstVarNext"
-                        android:src="@drawable/next"
+                        android:layout_gravity="right"
                         android:background="@android:color/transparent"
-                        android:layout_gravity="right" />
+                        android:src="@drawable/next" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -147,108 +147,108 @@
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
-                android:gravity="left|center|center_horizontal">
+                android:gravity="left|center|center_horizontal"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal" >
+                    android:layout_gravity="left|center_horizontal"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/thirdVarBack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/thirdVarBack"
-                        android:src="@drawable/back"
+                        android:layout_gravity="left"
                         android:background="@android:color/transparent"
-                        android:layout_gravity="left" />
+                        android:src="@drawable/back" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="match_parent"
-                android:paddingTop="130dp" >
+                android:orientation="vertical"
+                android:paddingTop="130dp">
 
                 <ImageView
+                    android:id="@+id/HSG"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
                     android:maxHeight="300dp"
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/HSG"
-                    android:src="@drawable/ofen"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/ofen" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/handlingVar3Titel"
                     android:id="@+id/handlingVar3Titel"
-                    android:paddingTop="20dp" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/handlingVar3Text"
+                    android:paddingTop="20dp"
+                    android:text="@string/handlingVar3Titel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
                     android:id="@+id/handlingVar3Text"
-                    android:paddingTop="10dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/handlingVar3Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center" >
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/thirdVarFirstBull"
-                        android:src="@drawable/bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
+                        android:src="@drawable/bullet" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/thirdVarSecBull"
-                        android:src="@drawable/bullet"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
-                        android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
-
-                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/thirdVarThirdBull"
-                        android:src="@drawable/bullethole"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
+                        android:src="@drawable/bullet" />
+
+                    <ImageView
+                        android:id="@+id/thirdVarThirdBull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullethole" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:paddingTop="10dp" >
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/thirdVarHome"
@@ -267,119 +267,119 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center|center_horizontal" >
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
 
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
                 android:layout_gravity="left"
-                android:gravity="center|center_horizontal">
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal" >
+                    android:layout_gravity="left|center_horizontal"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/secVarBack"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/secVarBack"
-                        android:src="@drawable/back"
+                        android:layout_gravity="left"
                         android:background="@android:color/transparent"
-                        android:layout_gravity="left" />
+                        android:src="@drawable/back" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="match_parent"
-                android:paddingTop="130dp" >
+                android:orientation="vertical"
+                android:paddingTop="130dp">
 
                 <ImageView
+                    android:id="@+id/Plattengrill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
                     android:maxHeight="300dp"
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/Plattengrill"
-                    android:src="@drawable/ofen"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/ofen" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="@string/handlingVar2Titel"
                     android:id="@+id/handlingVar2Titel"
-                    android:paddingTop="20dp" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="@string/handlingVar2Text"
+                    android:paddingTop="20dp"
+                    android:text="@string/handlingVar2Titel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
                     android:id="@+id/handlingVar2Text"
-                    android:paddingTop="10dp" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/handlingVar2Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center" >
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/secVarFirstBullet"
-                        android:src="@drawable/bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
+                        android:src="@drawable/bullet" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:id="@+id/secVarSecBullet"
-                        android:src="@drawable/bullethole"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
-                        android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
-
-                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/secVarThirdBullet"
-                        android:src="@drawable/bullet"
+                        android:adjustViewBounds="true"
                         android:maxHeight="20dp"
                         android:maxWidth="20dp"
                         android:scaleType="fitCenter"
-                        android:adjustViewBounds="true" />
+                        android:src="@drawable/bullethole" />
+
+                    <ImageView
+                        android:id="@+id/secVarThirdBullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="20dp"
+                        android:maxWidth="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullet" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:paddingTop="10dp" >
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/button3"
@@ -398,25 +398,25 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="427dp"
                 android:layout_height="800dp"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center|center_horizontal" >
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal" >
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/secVarNext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/secVarNext"
-                        android:src="@drawable/next"
+                        android:layout_gravity="right"
                         android:background="@android:color/transparent"
-                        android:layout_gravity="right" />
+                        android:src="@drawable/next" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
