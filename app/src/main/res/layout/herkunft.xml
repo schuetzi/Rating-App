@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="130dp"
+        android:paddingTop="78dp"
         android:gravity="center">
 
         <LinearLayout
@@ -21,7 +21,7 @@
             android:gravity="center_horizontal">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer1"
@@ -41,7 +41,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer2"
@@ -60,7 +60,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer3"
@@ -77,7 +77,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer4"
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer1"
@@ -123,7 +123,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer2"
@@ -141,7 +141,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer3"
@@ -158,7 +158,7 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer4"
@@ -187,8 +187,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer1"
                 android:onClick="getAnimationFade"
@@ -209,8 +209,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer2"
                 android:onClick="getAnimationFade"
@@ -229,8 +229,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer3"
                 android:onClick="getAnimationFade"
@@ -248,8 +248,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer4"
                 android:onClick="getAnimationFade"
@@ -271,7 +271,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer5"
@@ -290,7 +290,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer6"
@@ -308,7 +308,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer7"
@@ -325,7 +325,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/NameBauer8"
@@ -349,7 +349,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer5"
@@ -370,7 +370,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer6"
@@ -388,7 +388,7 @@
             android:paddingRight="10dp">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer7"
@@ -405,7 +405,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="290dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/OrtBauer8"
@@ -433,8 +433,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer5"
                 android:onClick="getAnimationFade"
@@ -455,8 +455,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer6"
                 android:onClick="getAnimationFade"
@@ -475,8 +475,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer7"
                 android:onClick="getAnimationFade"
@@ -494,8 +494,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="290dp"
-                android:maxWidth="290dp"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bauer8"
                 android:onClick="getAnimationFade"

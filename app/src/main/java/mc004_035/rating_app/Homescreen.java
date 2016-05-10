@@ -42,7 +42,7 @@ public class Homescreen extends Activity {
     public void playVideo(View v) {
         setContentView(R.layout.film); //Change layout
         final VideoView videoView = (VideoView) findViewById(R.id.videoView); // search in XML File
-        String path = "android.resource://mc004_035.rating_app/" + R.raw.intro; //get path
+        String path = "android.resource://mc004_035.rating_app/" + R.raw.film; //get path
         final Uri pathFixed = Uri.parse(path);
         videoView.setVideoURI(pathFixed);
         MediaController mediaController = new MediaController(Homescreen.this); //get Controllers for movie
@@ -154,7 +154,7 @@ public class Homescreen extends Activity {
         }
     }
 
-    public boolean onTouchEvent(MotionEvent touch) {
+    /*public boolean onTouchEvent(MotionEvent touch) {
         switch (touch.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 lastX = touch.getX();
@@ -188,7 +188,7 @@ public class Homescreen extends Activity {
                 break;
         }
         return false;
-    }
+    }*/
 
 
 

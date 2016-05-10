@@ -19,17 +19,17 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:gravity="left|bottom|end"
                 android:orientation="vertical">
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="1020dp"
+                android:layout_width="744dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp">
+                android:paddingTop="100dp">
 
                 <ImageView
                     android:id="@+id/firstPic"
@@ -52,7 +52,7 @@
 
                 <TextView
                     android:id="@+id/firstPicText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:text="@string/handlingVar1Text"
@@ -122,7 +122,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
@@ -153,7 +153,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:gravity="left|center|center_horizontal"
                 android:orientation="vertical">
 
@@ -174,10 +174,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="1020dp"
+                android:layout_width="744dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp">
+                android:paddingTop="110dp">
 
                 <ImageView
                     android:id="@+id/thirdPic"
@@ -200,7 +200,7 @@
 
                 <TextView
                     android:id="@+id/thirdPicText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:text="@string/handlingVar3Text"
@@ -268,7 +268,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
@@ -283,7 +283,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
@@ -305,10 +305,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="1020dp"
+                android:layout_width="744dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp">
+                android:paddingTop="110dp">
 
                 <ImageView
                     android:id="@+id/secPic"
@@ -331,7 +331,7 @@
 
                 <TextView
                     android:id="@+id/secPicText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:text="@string/handlingVar2Text"
@@ -399,7 +399,7 @@
 
             <LinearLayout
                 android:layout_width="140dp"
-                android:layout_height="800dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
