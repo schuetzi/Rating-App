@@ -7,7 +7,6 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Matrix;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -22,17 +21,8 @@ public class Homescreen extends Activity {
     ImageButton imageButton;
     private float[] currXandY = new float[2];
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.homescreen);
-        addTouchListenerOnImageButtons(
-                new String[]{"ButtonHomeVoting", "ButtonHomeFilm", "ButtonHomeQuality", "ButtonHomeHandling",
-                        "ButtonHomeHerkunft", "ButtonHomeReferenzen"},
-                new Class[]{Voting.class, Film.class, Qualitaet.class, Handling.class, Herkunft.class,
-                        Referenzen.class}
-        );
-    }
+
+
 
     private void addTouchListenerOnImageButtons(String[] buttonNames, Class[] classes) {
         ImageButton[] buttons = new ImageButton[buttonNames.length];

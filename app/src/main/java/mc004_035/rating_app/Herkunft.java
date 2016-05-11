@@ -4,7 +4,6 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -41,17 +40,58 @@ public class Herkunft extends Activity {
     }
 
     public void getAnimationFade(View v) {
-        String packageName = getPackageName();
-        Resources resources = getResources();
+        int id = v.getId();
         TextView text;
-        setAnimationFade(v, v.getId());
-        int i = 1;
-        while (v != findViewById(resources.getIdentifier("ButtonBauer" + i, "id", packageName)))
-            ++i;
-        text = (TextView) findViewById(resources.getIdentifier("NameBauer" + i, "id", packageName));
-        text.setVisibility(View.VISIBLE);
-        text = (TextView) findViewById(resources.getIdentifier("OrtBauer" + i, "id", packageName));
-        text.setVisibility(View.VISIBLE);
+        setAnimationFade(v, id);
+        switch (id) {
+            case R.id.ButtonBauer1:
+                text = (TextView) findViewById(R.id.NameBauer1);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer1);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer2:
+                text = (TextView) findViewById(R.id.NameBauer2);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer2);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer3:
+                text = (TextView) findViewById(R.id.NameBauer3);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer3);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer4:
+                text = (TextView) findViewById(R.id.NameBauer4);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer4);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer5:
+                text = (TextView) findViewById(R.id.NameBauer5);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer5);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer6:
+                text = (TextView) findViewById(R.id.NameBauer6);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer6);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer7:
+                text = (TextView) findViewById(R.id.NameBauer7);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer7);
+                text.setVisibility(View.VISIBLE);
+                break;
+            case R.id.ButtonBauer8:
+                text = (TextView) findViewById(R.id.NameBauer8);
+                text.setVisibility(View.VISIBLE);
+                text = (TextView) findViewById(R.id.OrtBauer8);
+                text.setVisibility(View.VISIBLE);
+        }
     }
 
 }
