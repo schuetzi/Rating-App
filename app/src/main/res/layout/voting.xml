@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteClassic"
+            android:src="@drawable/classic"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteReinePute"
+            android:src="@drawable/reine_pute"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSortePikant"
+            android:src="@drawable/pikant"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteKaese"
+            android:src="@drawable/kaese"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSortePuteKaese"
+            android:src="@drawable/pute_kaese"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteTomateMozzarella"
+            android:src="@drawable/tomate_mozzarella"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteSpinat"
+            android:src="@drawable/spinat"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSortePaprikaPerlzwiebel"
+            android:src="@drawable/paprika_perlzwiebel"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteZwiebel"
+            android:src="@drawable/zwiebel"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSortePizza"
+            android:src="@drawable/pizza"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteChiliCheese"
+            android:src="@drawable/chili_cheese"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSorteChili"
+            android:src="@drawable/chili"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSortePuteChili"
+            android:src="@drawable/pute_chili"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/zurueckVoting"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Zurück"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:id="@+id/weiterGewinnspiel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:background="@drawable/button"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Weiter\nzum Gewinnspiel"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -36,12 +36,11 @@
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:background="@drawable/button"
-                        android:onClick="getHomescreen"
                         android:shadowColor="#A8A8A8"
                         android:shadowDx="0"
                         android:shadowDy="0"
                         android:shadowRadius="5"
-                        android:text="Home"
+                        android:text="Zurück"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -91,28 +90,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullethole" />
+                        android:src="@drawable/bullethole"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
                         android:id="@+id/firstVarSecBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullet" />
+                        android:src="@drawable/bullet"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
                         android:id="@+id/firstVarThirdBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet" />
 
@@ -195,12 +196,11 @@
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:background="@drawable/button"
-                        android:onClick="getHomescreen"
                         android:shadowColor="#A8A8A8"
                         android:shadowDx="0"
                         android:shadowDy="0"
                         android:shadowRadius="5"
-                        android:text="Home"
+                        android:text="Zurück"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -246,32 +246,34 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/thirdVarFirstBull"
+                        android:id="@+id/thirdVarFirstBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullet" />
+                        android:src="@drawable/bullet"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/thirdVarSecBull"
+                        android:id="@+id/thirdVarSecBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullet" />
+                        android:src="@drawable/bullet"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/thirdVarThirdBull"
+                        android:id="@+id/thirdVarThirdBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullethole" />
                 </LinearLayout>
@@ -336,12 +338,11 @@
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:background="@drawable/button"
-                        android:onClick="getHomescreen"
                         android:shadowColor="#A8A8A8"
                         android:shadowDx="0"
                         android:shadowDy="0"
                         android:shadowRadius="5"
-                        android:text="Home"
+                        android:text="Zurück"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -391,28 +392,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullet" />
+                        android:src="@drawable/bullet"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
                         android:id="@+id/secVarSecBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/bullethole" />
+                        android:src="@drawable/bullethole"
+                        android:layout_marginEnd="7dp" />
 
                     <ImageView
                         android:id="@+id/secVarThirdBullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="20dp"
-                        android:maxWidth="20dp"
+                        android:maxHeight="21dp"
+                        android:maxWidth="21dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet" />
                 </LinearLayout>

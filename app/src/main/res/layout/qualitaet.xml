@@ -74,12 +74,11 @@
                                     android:layout_width="100dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/button"
-                                    android:onClick="getHomescreen"
                                     android:shadowColor="#A8A8A8"
                                     android:shadowDx="0"
                                     android:shadowDy="0"
                                     android:shadowRadius="5"
-                                    android:text="Home"
+                                    android:text="Zurück"
                                     android:textColor="#FFFFFF"
                                     android:textSize="20sp" />
                             </LinearLayout>

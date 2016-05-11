@@ -2,9 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1"
-    android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,8 +44,7 @@
                 android:maxHeight="220dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
-                android:onClick="getQualitaet"/>
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,8 +62,7 @@
                 android:maxHeight="220dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
-                android:onClick="getHandling"/>
+                android:background="@android:color/transparent" />
         </LinearLayout>
 
     </LinearLayout>
@@ -90,7 +87,6 @@
                 android:maxHeight="220dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:onClick="showHerkunft"
                 android:background="@android:color/transparent"
                 android:paddingLeft="5dp" />
         </LinearLayout>
@@ -109,7 +105,6 @@
                 android:maxHeight="220dp"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:onClick="playVideo"
                 android:background="@android:color/transparent"/>
         </LinearLayout>
 
@@ -127,8 +122,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:src="@drawable/referenzen"
-                android:background="@android:color/transparent"
-                android:onClick="getReferenzen"/>
+                android:background="@android:color/transparent" />
         </LinearLayout>
     </LinearLayout>
 
