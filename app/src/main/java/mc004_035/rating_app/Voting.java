@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 /**
- * Created by LSFR77 on 10.05.2
- *
- *
- * 016.
+ * Created by LSFR77 on 10.05.2016.
  */
 public class Voting extends Activity {
 

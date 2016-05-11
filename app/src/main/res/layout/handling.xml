@@ -90,8 +90,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullethole"
                         android:layout_marginEnd="7dp" />
@@ -101,8 +101,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet"
                         android:layout_marginEnd="7dp" />
@@ -112,8 +112,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet" />
 
@@ -250,8 +250,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet"
                         android:layout_marginEnd="7dp" />
@@ -261,8 +261,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet"
                         android:layout_marginEnd="7dp" />
@@ -272,8 +272,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullethole" />
                 </LinearLayout>
@@ -392,8 +392,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet"
                         android:layout_marginEnd="7dp" />
@@ -403,8 +403,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullethole"
                         android:layout_marginEnd="7dp" />
@@ -414,8 +414,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:maxHeight="21dp"
-                        android:maxWidth="21dp"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/bullet" />
                 </LinearLayout>
