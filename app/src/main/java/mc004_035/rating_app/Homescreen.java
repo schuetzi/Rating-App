@@ -20,7 +20,7 @@ import android.widget.ImageView;
 public class Homescreen extends Activity {
 
     ImageButton imageButton;
-    private float[] currXandY = new float[2];
+    private final float[] currXandY = new float[2];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +53,10 @@ public class Homescreen extends Activity {
 
         final int buttonWidth = 220, buttonHeight = 220;
 
-        ImageButton button;
-        Class CLASS;
-        ColorMatrixColorFilter filter;
-        Matrix matrix;
+        final ImageButton button;
+        final Class CLASS;
+        final ColorMatrixColorFilter filter;
+        final Matrix matrix;
 
         CustomListener(ImageButton button, Class CLASS, ColorMatrixColorFilter filter) {
             this.button = button;

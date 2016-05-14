@@ -83,9 +83,9 @@ public class Carousel extends Activity {
 
     private class CustomListener implements View.OnClickListener {
 
-        int flipperId;
-        String viewName;
-        String[] viewNames;
+        final int flipperId;
+        final String viewName;
+        final String[] viewNames;
 
         CustomListener(int flipperId, String viewName, String[] viewNames) {
             this.flipperId = flipperId;

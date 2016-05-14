@@ -33,5 +33,19 @@
     <string name="handlingVar3Titel">Variante 3: HSG</string>
     <string name="handlingVar3Text"><ol><li>first\n</li><li>second\n</li></ol></string>
 
-
+    <string name="BeschreibungClassic">
+        Die echte Naturkruste verleiht dem Klassiker\nden herzhaften und feinen Geschmack.
+    </string>
+    <string name="BeschreibungReinePute">Bla</string>
+    <string name="BeschreibungPikant">Bla</string>
+    <string name="BeschreibungKaese">Bla</string>
+    <string name="BeschreibungPuteKaese">Bla</string>
+    <string name="BeschreibungTomateMozzarella">Bla</string>
+    <string name="BeschreibungSpinat">Bla</string>
+    <string name="BeschreibungPaprikaPerlzwiebel">Bla</string>
+    <string name="BeschreibungZwiebel">Bla</string>
+    <string name="BeschreibungPizza">Bla</string>
+    <string name="BeschreibungChiliCheese">Bla</string>
+    <string name="BeschreibungChili">Bla</string>
+    <string name="BeschreibungPuteChili">Bla</string>
 </resources>
