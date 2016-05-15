@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-/**
- * Created by LSFR77 on 13.05.2016.
- */
+
 public class VotingDetail extends Activity {
 
     @Override

@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
 
-/**
- * Created by LSFR77 on 10.05.2016.
- */
+
 public class Voting extends Activity implements View.OnClickListener {
 
     @Override

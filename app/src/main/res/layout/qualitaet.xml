@@ -30,7 +30,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/ohneGen"
+                    android:id="@+id/qualitaet_pic_ohne_Gen"
                     android:src="@drawable/ohnegen"/>
 
                 <LinearLayout
@@ -42,7 +42,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/Ama"
+                        android:id="@+id/qualitaet_pic_ama"
                         android:src="@drawable/ama" />
 
                     <LinearLayout
@@ -54,7 +54,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/ohneFarb"
+                            android:id="@+id/qualitaet_pic_ohne_Farb"
                             android:src="@drawable/ohnestoffe" />
 
                         <LinearLayout
@@ -70,7 +70,7 @@
                                 android:paddingTop="20dp">
 
                                 <Button
-                                    android:id="@+id/button"
+                                    android:id="@+id/qualitaet_button_zurueck"
                                     android:layout_width="100dp"
                                     android:layout_height="40dp"
                                     android:background="@drawable/button"
@@ -78,7 +78,7 @@
                                     android:shadowDx="0"
                                     android:shadowDy="0"
                                     android:shadowRadius="5"
-                                    android:text="Zurück"
+                                    android:text="@string/handling_zurueck"
                                     android:textColor="#FFFFFF"
                                     android:textSize="20sp" />
                             </LinearLayout>
@@ -104,8 +104,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/OhneGen"
-                        android:id="@+id/ohneGenTitel"
+                        android:text="@string/qualitaet_ohne_Gen_titel"
+                        android:id="@+id/qualitaet_ohne_Gen_titel"
                         android:textSize="24px"
                         android:textColor="#723915"/>
 
@@ -119,8 +119,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:id="@+id/ohneGenText"
-                            android:text="@string/OhneGenText"
+                            android:id="@+id/qualitaet_ohne_Gen_text"
+                            android:text="@string/qualitaet_ohne_Gen_text"
                             android:textSize="14px"
                             android:textColor="#723915"/>
                     </LinearLayout>
@@ -137,8 +137,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/amaTitel"
-                        android:id="@+id/amaTitel"
+                        android:text="@string/qualitaet_ama_titel"
+                        android:id="@+id/qualitaet_ama_titel"
                         android:textSize="24px"
                         android:textColor="#723915" />
 
@@ -151,8 +151,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:id="@+id/amaText"
-                            android:text="@string/amaText"
+                            android:id="@+id/qualitaet_ama_text"
+                            android:text="@string/qualitaet_ama_text"
                             android:textSize="14px"
                             android:textColor="#723915"
                             android:paddingTop="10dp" />
@@ -170,8 +170,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="@string/ohneFarbTitel"
-                        android:id="@+id/ohneFarbTitel"
+                        android:text="@string/qualitaet_ohne_farb_titel"
+                        android:id="@+id/qualitaet_ohne_farb_titel"
                         android:textSize="24px"
                         android:textColor="#723915" />
 
@@ -184,8 +184,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
-                            android:id="@+id/ohneFarbText"
-                            android:text="@string/ohneFarbText"
+                            android:id="@+id/qualitaet_ohne_farb_text"
+                            android:text="@string/qualitaet_ohne_farb_text"
                             android:textSize="14px"
                             android:textColor="#723915"
                             android:paddingTop="10dp" />
@@ -205,7 +205,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Unterschied"
+                android:id="@+id/qualitaet_pic_unterschied"
                 android:src="@drawable/unterschied"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>

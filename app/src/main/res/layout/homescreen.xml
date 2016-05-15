@@ -18,15 +18,9 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeVoting"
-                android:src="@drawable/voting"
-                android:adjustViewBounds="true"
-                android:maxHeight="220dp"
-                android:maxWidth="220dp"
-                android:scaleType="fitCenter"
-                android:background="@android:color/transparent" />
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_voting"
+                android:src="@drawable/voting" />
         </LinearLayout>
 
         <LinearLayout
@@ -36,15 +30,9 @@
             android:paddingTop="16dp">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeQuality"
-                android:src="@drawable/qualitaet"
-                android:maxWidth="220dp"
-                android:maxHeight="220dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent" />
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_qualitaet"
+                android:src="@drawable/qualitaet" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,15 +42,9 @@
             android:paddingTop="16dp">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeHandling"
-                android:src="@drawable/handling"
-                android:maxWidth="220dp"
-                android:maxHeight="220dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent" />
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_handling"
+                android:src="@drawable/handling" />
         </LinearLayout>
 
     </LinearLayout>
@@ -79,15 +61,9 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeHerkunft"
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_herkunft"
                 android:src="@drawable/herkunft"
-                android:maxWidth="220dp"
-                android:maxHeight="220dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
                 android:paddingLeft="5dp" />
         </LinearLayout>
 
@@ -97,15 +73,9 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeFilm"
-                android:src="@drawable/film"
-                android:maxWidth="220dp"
-                android:maxHeight="220dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:background="@android:color/transparent"/>
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_film"
+                android:src="@drawable/film" />
         </LinearLayout>
 
         <LinearLayout
@@ -114,15 +84,9 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ButtonHomeReferenzen"
-                android:maxWidth="220dp"
-                android:maxHeight="220dp"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:src="@drawable/referenzen"
-                android:background="@android:color/transparent" />
+                style="@style/homescreen_button"
+                android:id="@+id/homescreen_button_referenzen"
+                android:src="@drawable/referenzen"/>
         </LinearLayout>
     </LinearLayout>
 

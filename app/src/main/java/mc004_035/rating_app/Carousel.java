@@ -8,44 +8,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-/**
- * Created by LSFR77 on 11.05.2016.
- */
+
 public class Carousel extends Activity {
 
     private float lastX;
 
-    public void addClickListenerOnImageViews(int flipperId, String[] viewNames) {
-        String packageName = getPackageName();
-        Resources resources = getResources();
-        ImageView[] views = new ImageView[viewNames.length];
-        for (int i = 0; i < viewNames.length; ++i) {
-            views[i] = (ImageView) findViewById(
-                    resources.getIdentifier(viewNames[i], "id", packageName)
-            );
-            views[i].setOnClickListener(new CustomListener(flipperId, viewNames[i], viewNames));
-        }
-    }
-
-    public void addClickListenerOnButtons(String[] buttonNames) {
-        String packageName = getPackageName();
-        Resources resources = getResources();
-        Button[] buttons = new Button[buttonNames.length];
-        for (int i = 0; i < buttons.length; ++i) {
-            buttons[i] = (Button) findViewById(
-                    resources.getIdentifier(buttonNames[i], "id", packageName)
-            );
-            buttons[i].setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    finish();
-                }
-            });
-        }
-    }
-
-    public boolean onTouchEvent(int flipperId, MotionEvent touch) {
-        ViewFlipper viewFlipper = (ViewFlipper) findViewById(flipperId);
+    public boolean onTouchEvent(ViewFlipper viewFlipper, MotionEvent touch) {
         switch (touch.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 lastX = touch.getX();
@@ -80,49 +48,4 @@ public class Carousel extends Activity {
         }
         return false;
     }
-
-    private class CustomListener implements View.OnClickListener {
-
-        final int flipperId;
-        final String viewName;
-        final String[] viewNames;
-
-        CustomListener(int flipperId, String viewName, String[] viewNames) {
-            this.flipperId = flipperId;
-            this.viewName = viewName;
-            this.viewNames = viewNames;
-        }
-
-        @Override
-        public void onClick(View v) {
-            ViewFlipper viewFlipper = (ViewFlipper) findViewById(flipperId);
-            if (viewName == viewNames[0] || viewName == viewNames[1]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_right);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_left);
-                viewFlipper.showPrevious();
-            } else if (viewName == viewNames[2]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_far_right);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_far_left);
-                viewFlipper.showNext();
-            } else if (viewName == viewNames[3] || viewName == viewNames[5]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_left);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_right);
-                viewFlipper.showNext();
-            } else if (viewName == viewNames[4] || viewName == viewNames[6]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_right);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_left);
-                viewFlipper.showPrevious();
-            } else if (viewName == viewNames[7] || viewName == viewNames[9]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_left);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_right);
-                viewFlipper.showNext();
-            } else if (viewName == viewNames[8]) {
-                viewFlipper.setInAnimation(Carousel.this, R.anim.slide_in_from_far_left);
-                viewFlipper.setOutAnimation(Carousel.this, R.anim.slide_out_to_far_right);
-                viewFlipper.showPrevious();
-            }
-        }
-
-    }
-
 }

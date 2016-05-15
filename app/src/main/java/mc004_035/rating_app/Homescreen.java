@@ -14,9 +14,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
-/**
- * Created by Gabriel on 03.05.16.
- */
 public class Homescreen extends Activity {
 
     ImageButton imageButton;
@@ -26,27 +23,26 @@ public class Homescreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
-        addTouchListenerOnImageButtons(
-                new String[]{"ButtonHomeVoting", "ButtonHomeFilm", "ButtonHomeQuality", "ButtonHomeHandling",
-                        "ButtonHomeHerkunft", "ButtonHomeReferenzen"},
-                new Class[]{Voting.class, Film.class, Qualitaet.class, Handling.class, Herkunft.class,
-                        Referenzen.class}
-        );
-    }
 
-    private void addTouchListenerOnImageButtons(String[] buttonNames, Class[] classes) {
-        ImageButton[] buttons = new ImageButton[buttonNames.length];
-        String packName = getPackageName();
-        Resources resources = getResources();
 
         ColorMatrix c = new ColorMatrix();
         c.setSaturation(0);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(c);
 
-        for (int i = 0; i < buttons.length; ++i) {
-            buttons[i] = (ImageButton) findViewById(resources.getIdentifier(buttonNames[i], "id", packName));
-            buttons[i].setOnTouchListener(new CustomListener(buttons[i], classes[i], filter));
-        }
+        ImageButton imageButton = null;
+
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_voting);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_voting), Voting.class, filter));
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_qualitaet);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_qualitaet), Qualitaet.class, filter));
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_handling);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_handling), Handling.class, filter));
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_herkunft);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_herkunft), HerkunftMenu.class, filter));
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_film);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_film), Film.class, filter));
+        imageButton = (ImageButton) findViewById(R.id.homescreen_button_referenzen);
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_referenzen), Referenzen.class, filter));
     }
 
     private class CustomListener implements View.OnTouchListener {
@@ -91,7 +87,5 @@ public class Homescreen extends Activity {
             }
             return true;
         }
-
     }
-
 }

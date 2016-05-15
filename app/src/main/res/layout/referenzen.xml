@@ -8,7 +8,7 @@
 
 
     <ViewFlipper
-        android:id="@+id/viewSecondFlipper"
+        android:id="@+id/referenzen_view_flipper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -32,7 +32,7 @@
                     android:gravity="left">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/referenzen_first_button_zurueck"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:background="@drawable/button"
@@ -40,7 +40,7 @@
                         android:shadowDx="0"
                         android:shadowDy="0"
                         android:shadowRadius="5"
-                        android:text="Zurück"
+                        android:text="@string/handling_zurueck"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -53,7 +53,7 @@
                 android:paddingTop="100dp">
 
                 <ImageView
-                    android:id="@+id/firstPic"
+                    android:id="@+id/referenzen_first_pic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -64,19 +64,19 @@
                     android:src="@drawable/ofen" />
 
                 <TextView
-                    android:id="@+id/firstPicTitle"
+                    android:id="@+id/referenzen_first_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
-                    android:text="@string/handlingVar1Titel"
+                    android:text="@string/handling_var1_titel"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 <TextView
-                    android:id="@+id/firstPicText"
+                    android:id="@+id/referenzen_first_page_pic_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
-                    android:text="@string/handlingVar1Text"
+                    android:text="@string/handling_var1_text"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
@@ -86,7 +86,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/firstPicFirstBullet"
+                        android:id="@+id/referenzen_first_page_first_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -97,7 +97,7 @@
                         android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/firstPicSecBullet"
+                        android:id="@+id/referenzen_first_page_sec_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -108,7 +108,7 @@
                         android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/firstPicThirdBullet"
+                        android:id="@+id/referenzen_first_page_third_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -135,7 +135,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/firstPicNext"
+                        android:id="@+id/referenzen_first_page_next"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -172,7 +172,7 @@
                     android:paddingTop="235dp" >
 
                     <ImageView
-                        android:id="@+id/thirdPicBack"
+                        android:id="@+id/referenzen_sec_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -194,7 +194,7 @@
                     android:paddingBottom="20dp" >
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/referenzen_sec_page_button_zurueck"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:background="@drawable/button"
@@ -202,7 +202,7 @@
                         android:shadowDx="0"
                         android:shadowDy="0"
                         android:shadowRadius="5"
-                        android:text="Zurück"
+                        android:text="@string/handling_zurueck"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -212,10 +212,10 @@
                 android:layout_width="744dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="110dp">
+                android:paddingTop="100dp">
 
                 <ImageView
-                    android:id="@+id/thirdPic"
+                    android:id="@+id/referenzen_sec_page_sec_pic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -226,19 +226,19 @@
                     android:src="@drawable/ofen" />
 
                 <TextView
-                    android:id="@+id/thirdPicTitel"
+                    android:id="@+id/referenzen_sec_page_sec_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
-                    android:text="@string/handlingVar3Titel"
+                    android:text="@string/handling_var2_titel"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 <TextView
-                    android:id="@+id/thirdPicText"
+                    android:id="@+id/referenzen_sec_page_sec_pic_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
-                    android:text="@string/handlingVar3Text"
+                    android:text="@string/handling_var2_text"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <LinearLayout
@@ -248,7 +248,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/thirdPicFirstBullet"
+                        android:id="@+id/referenzen_sec_page_first_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -259,7 +259,155 @@
                         android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/thirdPicSecBullet"
+                        android:id="@+id/referenzen_sec_page_sec_bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullethole"
+                        android:layout_marginEnd="7dp" />
+
+                    <ImageView
+                        android:id="@+id/referenzen_sec_page_third_bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullet" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/referenzen_sec_page_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="90dp"
+                        android:maxWidth="90dp"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="left|bottom|center|center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:orientation="vertical"
+                    android:gravity="center|center_horizontal"
+                    android:paddingTop="235dp" >
+
+                    <ImageView
+                        android:id="@+id/referenzen_third_page_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="90dp"
+                        android:maxWidth="90dp"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/back" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp" >
+
+                    <Button
+                        android:id="@+id/referenzen_third_page_button_zurueck"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="@string/handling_zurueck"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="744dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="100dp">
+
+                <ImageView
+                    android:id="@+id/referenzen_third_page_third_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="300dp"
+                    android:maxWidth="600dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ofen" />
+
+                <TextView
+                    android:id="@+id/referenzen_third_page_pic_titel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:text="@string/handling_var3_titel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/referenzen_third_page_pic_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="@string/handling_var3_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/referenzen_third_page_first_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -270,7 +418,18 @@
                         android:layout_marginEnd="7dp" />
 
                     <ImageView
-                        android:id="@+id/thirdPicThirdBullet"
+                        android:id="@+id/referenzen_third_page_sec_bullet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="15dp"
+                        android:maxWidth="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bullet"
+                        android:layout_marginEnd="7dp" />
+
+                    <ImageView
+                        android:id="@+id/referenzen_third_page_third_bullet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -289,165 +448,6 @@
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
 
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:gravity="left|bottom|center|center_horizontal"
-                android:orientation="vertical" >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:orientation="vertical"
-                    android:gravity="center|center_horizontal"
-                    android:paddingTop="235dp" >
-
-                    <ImageView
-                        android:id="@+id/secPicBack"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:adjustViewBounds="true"
-                        android:maxHeight="90dp"
-                        android:maxWidth="90dp"
-                        android:scaleType="fitCenter"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/back" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:layout_gravity="left|center_horizontal"
-                    android:paddingLeft="20dp"
-                    android:paddingBottom="20dp" >
-
-                    <Button
-                        android:id="@+id/button4"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="Zurück"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="744dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingTop="110dp">
-
-                <ImageView
-                    android:id="@+id/secPic"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="true"
-                    android:maxHeight="300dp"
-                    android:maxWidth="600dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ofen" />
-
-                <TextView
-                    android:id="@+id/secPicTitel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="20dp"
-                    android:text="@string/handlingVar2Titel"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <TextView
-                    android:id="@+id/secPicText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:text="@string/handlingVar2Text"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/secPicFirstBullet"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:maxHeight="15dp"
-                        android:maxWidth="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/bullet"
-                        android:layout_marginEnd="7dp" />
-
-                    <ImageView
-                        android:id="@+id/secPicSecBullet"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:maxHeight="15dp"
-                        android:maxWidth="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/bullethole"
-                        android:layout_marginEnd="7dp" />
-
-                    <ImageView
-                        android:id="@+id/secPicThirdBullet"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:maxHeight="15dp"
-                        android:maxWidth="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/bullet" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center|center_horizontal"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/secPicNext"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:adjustViewBounds="true"
-                        android:maxHeight="90dp"
-                        android:maxWidth="90dp"
-                        android:scaleType="fitCenter"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/next" />
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
