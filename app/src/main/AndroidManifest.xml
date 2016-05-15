@@ -21,7 +21,6 @@
         <!-- <activity android:name=".VotingSubmit" /> -->
         <activity android:name=".Qualitaet" />
         <activity android:name=".Handling" />
-        <activity android:name=".Herkunft" />
         <activity android:name=".Film" />
         <activity android:name=".Referenzen" />
         <activity android:name=".HerkunftMenu" />
