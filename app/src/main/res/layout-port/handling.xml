@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+
+    <ViewFlipper
+        android:id="@+id/handling_view_Flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|bottom|end"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.22"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/handling_var1_pic"
+                    style="@style/handling_pic"
+                    android:src="@drawable/ofen" />
+
+                <TextView
+                    android:id="@+id/handling_var1_titel"
+                    style="@style/handling_titel"
+                    android:text="@string/handling_var1_titel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/handling_var1_text"
+                    style="@style/handling_text"
+                    android:text="@string/handling_var1_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/handling_var1_first_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullethole" />
+
+                    <ImageView
+                        android:id="@+id/handling_var1_sec_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet" />
+
+                    <ImageView
+                        android:id="@+id/handling_var1_third_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:gravity="left">
+
+                    <Button
+                        android:id="@+id/handling_var1_zurueck"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="@string/handling_zurueck"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/handling_var1_next"
+                        style="@style/handling_next"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="left|center|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/handling_var2_back"
+                        style="@style/handling_back"
+                        android:src="@drawable/back" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.22"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/handling_var2_pic"
+                    style="@style/handling_pic"
+                    android:src="@drawable/ofen" />
+
+                <TextView
+                    android:id="@+id/handling_var2_titel"
+                    style="@style/handling_titel"
+                    android:text="@string/handling_var2_titel" />
+
+                <TextView
+                    android:id="@+id/handling_var2_text"
+                    style="@style/handling_text"
+                    android:text="@string/handling_var2_text"
+                    android:layout_width="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/handling_var2_first_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet"/>
+
+                    <ImageView
+                        android:id="@+id/handling_var2_sec_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullethole" />
+
+                    <ImageView
+                        android:id="@+id/handling_var2_third_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_gravity="left|center_horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp">
+
+                    <Button
+                        android:id="@+id/handling_var2_zurueck"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="@string/handling_zurueck"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/handling_var2_next"
+                        style="@style/handling_next"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/handling_var3_back"
+                        style="@style/handling_back"
+                        android:src="@drawable/back" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.22"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/handling_var3_pic"
+                    style="@style/handling_pic"
+                    android:src="@drawable/ofen" />
+
+                <TextView
+                    android:id="@+id/handling_var3_titel"
+                    style="@style/handling_titel"
+                    android:text="@string/handling_var3_titel" />
+
+                <TextView
+                    android:id="@+id/handling_var3_text"
+                    style="@style/handling_text"
+                    android:text="@string/handling_var3_text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/handling_var3_first_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet" />
+
+                    <ImageView
+                        android:id="@+id/handling_var3_sec_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullet" />
+
+                    <ImageView
+                        android:id="@+id/handling_var3_third_bullet"
+                        style="@style/handling_bullet"
+                        android:src="@drawable/bullethole" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|center|center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="left|center_horizontal"
+                    android:paddingBottom="20dp">
+
+                    <Button
+                        android:id="@+id/handling_var3_zurueck"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="@string/handling_zurueck"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ViewFlipper>
+</LinearLayout>
