@@ -94,12 +94,27 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
         button.setOnClickListener(this);
     }
 
-    public void setAnimationFade(int id) {
+    public void setAnimationFade(int id, View v) {
         myButton = (ImageButton) findViewById(id);
         ObjectAnimator animator = ObjectAnimator.ofFloat(myButton, View.ALPHA, 0.5f, 1f);
         animator.setDuration(300); //ms
         animator.start();
         animator.addListener(this);
+        setTextVisible(v);
+    }
+
+    public void setTextVisible(View v) {
+        TextView text;
+        StringBuffer id = new StringBuffer();
+        id.append(getResources().getResourceName(v.getId()));
+        id.delete(id.length() - 6, id.length());
+        id.append("name");
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
+        text.setVisibility(View.VISIBLE);
+        id.delete(id.length() - 4, id.length());
+        id.append("ort");
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
+        text.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -139,195 +154,98 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
                 break;
             }
             case R.id.herkunft_schweine_bauer1_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer1_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer1_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer1_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer1_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer2_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer2_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer2_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer2_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer2_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer3_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer3_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer3_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer3_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer3_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer4_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer4_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer4_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer4_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer4_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer5_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer5_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer5_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer5_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer5_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer6_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer6_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer6_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer6_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer6_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer7_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer7_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer7_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer7_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer7_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer8_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer8_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer8_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer8_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer8_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer9_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer9_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer9_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer9_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer9_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer10_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer10_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer10_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer10_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer10_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer11_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer11_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer11_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer11_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer11_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer12_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer12_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer12_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer12_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer12_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer13_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer13_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer13_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer13_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer13_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer14_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer14_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer14_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer14_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer14_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer15_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer15_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer15_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer15_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer15_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer16_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer16_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer16_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer16_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer16_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer17_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer17_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer17_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer17_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer17_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer18_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer18_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer18_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer18_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer18_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer19_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer19_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer19_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer19_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer19_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer20_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer20_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer20_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer20_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer20_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer21_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer21_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer21_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer21_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer21_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer22_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer22_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer22_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer22_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer22_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer23_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer23_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer23_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer23_ort);
-                text.setVisibility(View.VISIBLE);
                 break;
             }
             case R.id.herkunft_schweine_bauer24_button: {
-                setAnimationFade(R.id.herkunft_schweine_bauer24_button);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer24_name);
-                text.setVisibility(View.VISIBLE);
-                text = (TextView) findViewById(R.id.herkunft_schweine_bauer24_ort);
-                text.setVisibility(View.VISIBLE);
+                setAnimationFade(R.id.herkunft_schweine_bauer24_button, v);
                 break;
             }
             case R.id.herkunft_schweine_first_page_button_zurueck:
