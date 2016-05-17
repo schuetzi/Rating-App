@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -94,6 +95,11 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
         button.setOnClickListener(this);
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent touch) {
+        return super.onTouchEvent(viewFlipper, touch);
+    }
+
     public void setAnimationFade(int id, View v) {
         myButton = (ImageButton) findViewById(id);
         ObjectAnimator animator = ObjectAnimator.ofFloat(myButton, View.ALPHA, 0.5f, 1f);
@@ -109,11 +115,11 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
         id.append(getResources().getResourceName(v.getId()));
         id.delete(id.length() - 6, id.length());
         id.append("name");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
         text.setVisibility(View.VISIBLE);
         id.delete(id.length() - 4, id.length());
         id.append("ort");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
         text.setVisibility(View.VISIBLE);
     }
 
@@ -242,6 +248,7 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
                 break;
             }
             case R.id.herkunft_schweine_bauer23_button: {
+                setAnimationFade(R.id.herkunft_schweine_bauer23_button, v);
                 break;
             }
             case R.id.herkunft_schweine_bauer24_button: {

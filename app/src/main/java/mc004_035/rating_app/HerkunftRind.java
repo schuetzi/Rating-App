@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -12,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-public class HerkunftRind extends Activity implements View.OnClickListener, Animator.AnimatorListener {
+public class HerkunftRind extends Carousel implements View.OnClickListener, Animator.AnimatorListener {
 
     private static final String TAG = "HerkunftRind";
     ViewFlipper viewFlipper;
@@ -111,6 +112,11 @@ public class HerkunftRind extends Activity implements View.OnClickListener, Anim
         button.setOnClickListener(this);
         button = (Button) findViewById(R.id.herkunft_rinder_fourth_page_button_zurueck);
         button.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent touch) {
+        return super.onTouchEvent(viewFlipper, touch);
     }
 
     public void setAnimationFade(int id, View v) {
