@@ -118,7 +118,6 @@
     <string name="herkunft_rinder_bauer30_name">bauer30_name</string>
     <string name="herkunft_rinder_bauer30_ort">bauer30_ort</string>
 
-
     <string name="qualitaet_ohne_Gen_titel">100% gentechnikfrei</string>
     <string name="qualitaet_ohne_Gen_text">Die Bauern unseres Vertrauens verwenden ausschließlich\ngentechnikfreie Futtermittel.</string>
     <string name="qualitaet_ama_titel">AMA Gütesiegel</string>
@@ -134,6 +133,22 @@
     <string name="handling_var2_text"><ol><li>first\n</li><li>second\n</li></ol></string>
     <string name="handling_var3_titel">Variante 3: HSG</string>
     <string name="handling_var3_text"><ol><li>first\n</li><li>second\n</li></ol></string>
+
+    <string-array name="sorten">
+        <item>Classic</item>
+        <item>ReinePute</item>
+        <item>Pikant</item>
+        <item>Kaese</item>
+        <item>PuteKaese</item>
+        <item>TomateMozzarella</item>
+        <item>Spinat</item>
+        <item>PaprikaPerlzwiebel</item>
+        <item>Zwiebel</item>
+        <item>Pizza</item>
+        <item>ChiliCheese</item>
+        <item>Chili</item>
+        <item>PuteChili</item>
+    </string-array>
 
     <string name="BeschreibungClassic">
         Die echte Naturkruste verleiht dem Klassiker\nden herzhaften und feinen Geschmack.

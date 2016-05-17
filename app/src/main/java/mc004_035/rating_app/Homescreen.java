@@ -2,7 +2,6 @@ package mc004_035.rating_app;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Matrix;
@@ -38,7 +37,7 @@ public class Homescreen extends Activity {
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_handling);
         imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_handling), Handling.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_herkunft);
-        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_herkunft), HerkunftMenu.class, filter));
+        //imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_herkunft), HerkunftMenu.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_film);
         imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_film), Film.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_referenzen);
@@ -82,7 +81,9 @@ public class Homescreen extends Activity {
                 button.setScaleType(ImageView.ScaleType.FIT_CENTER);
                 if (Math.abs(ev.getX() - currXandY[0]) < 10 &&
                         Math.abs(ev.getY() - currXandY[1]) < 10) {
-                    startActivity(new Intent(Homescreen.this, CLASS));
+                    Intent intent = new Intent(Homescreen.this, CLASS);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    startActivity(intent);
                 }
             }
             return true;

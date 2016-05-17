@@ -1,6 +1,8 @@
 package mc004_035.rating_app;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -15,13 +17,7 @@ public class Voting extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.voting);
-        addClickListener(
-                new String[]{
-                        "Classic", "ReinePute", "Pikant", "Kaese", "PuteKaese", "TomateMozzarella",
-                        "Spinat", "PaprikaPerlzwiebel", "Zwiebel", "Pizza", "ChiliCheese", "Chili",
-                        "PuteChili"
-                }
-        );
+        addClickListener(getResources().getStringArray(R.array.sorten));
         findViewById(R.id.zurueckVoting).setOnClickListener(this);
         findViewById(R.id.weiterGewinnspiel).setOnClickListener(this);
     }
@@ -58,8 +54,17 @@ public class Voting extends Activity implements View.OnClickListener {
 
     @Override
     public void onBackPressed() {
-        // to do
-        finish();
+        new AlertDialog.Builder(this)
+                .setTitle("Bewertungen beibehalten?")
+                .setMessage("Wie soll mit den vorgenommenen Bewertungen verfahren werden?")
+                .setNegativeButton("Verwerfen", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        backToHome();
+                        finish();
+                    }
+                })
+                .show();
     }
 
     public void onClick(View v) {
@@ -68,6 +73,12 @@ public class Voting extends Activity implements View.OnClickListener {
         } else {
             // startActivity(new Intent(this, VotingSubmit.class));}
         }
+    }
+
+    private void backToHome() {
+        Intent intent = new Intent(Voting.this, Homescreen.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
     }
 
 }
