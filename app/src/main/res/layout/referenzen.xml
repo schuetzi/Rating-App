@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background_landscape"
     android:orientation="horizontal"
     android:weightSum="1">
 
@@ -62,9 +62,10 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:maxHeight="300dp"
-                    android:maxWidth="600dp"
+                    android:maxWidth="500dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ofen" />
+                    android:src="@drawable/ofen"
+                    android:paddingTop="20dp" />
 
                 <TextView
                     android:id="@+id/referenzen_first_page_pic_titel"
@@ -229,7 +230,8 @@
                     android:maxHeight="300dp"
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ofen" />
+                    android:src="@drawable/ofen"
+                    android:paddingTop="20dp" />
 
                 <TextView
                     android:id="@+id/referenzen_sec_page_sec_pic_titel"
@@ -391,7 +393,8 @@
                     android:maxHeight="300dp"
                     android:maxWidth="600dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ofen" />
+                    android:src="@drawable/ofen"
+                    android:paddingTop="20dp" />
 
                 <TextView
                     android:id="@+id/referenzen_third_page_pic_titel"

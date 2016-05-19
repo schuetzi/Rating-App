@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +6,9 @@
     android:orientation="horizontal"
     android:weightSum="1">
 
+
     <ViewFlipper
-        android:id="@+id/herkunft_rinder_view_flipper"
+        android:id="@+id/herkunft_schweine_view_flipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -23,54 +23,57 @@
                 android:layout_height="match_parent"
                 android:gravity="left|bottom|end"
                 android:orientation="vertical"
-                android:layout_weight="1" />
+                android:layout_weight="1">
+
+            </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1"
-                android:layout_weight="0.2"
-                android:gravity="center">
+                android:layout_weight="0.2">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.4"
-                    android:gravity="bottom">
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.7">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center|center_horizontal">
+                        android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer1_name"
+                            android:id="@+id/herkunft_schweine_bauer1_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer1_name" />
+                            android:text="@string/herkunft_schweine_bauer1_name" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center|center_horizontal">
+                        android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer2_name"
+                            android:id="@+id/herkunft_schweine_bauer2_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer2_name" />
+                            android:text="@string/herkunft_schweine_bauer2_name" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -80,9 +83,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer1_ort"
+                            android:id="@+id/herkunft_schweine_bauer1_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer1_ort" />
+                            android:text="@string/herkunft_schweine_bauer1_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -93,9 +96,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer2_ort"
+                            android:id="@+id/herkunft_schweine_bauer2_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer2_ort" />
+                            android:text="@string/herkunft_schweine_bauer2_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -113,7 +116,7 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer1_button"
+                            android:id="@+id/herkunft_schweine_bauer1_button"
                             style="@style/herkunft_bauern_pic"
                             android:src="@drawable/schweine_bauer1" />
                     </LinearLayout>
@@ -126,9 +129,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer2_button"
+                            android:id="@+id/herkunft_schweine_bauer2_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer2" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -145,9 +148,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer3_name"
+                            android:id="@+id/herkunft_schweine_bauer3_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer3_name" />
+                            android:text="@string/herkunft_schweine_bauer3_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -155,12 +158,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_weight="1"
-                        android:gravity="center|center_horizontal">
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer4_name"
+                            android:id="@+id/herkunft_schweine_bauer4_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer4_name" />
+                            android:text="@string/herkunft_schweine_bauer4_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -177,9 +180,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer3_ort"
+                            android:id="@+id/herkunft_schweine_bauer3_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer3_ort" />
+                            android:text="@string/herkunft_schweine_bauer3_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -190,9 +193,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer4_ort"
+                            android:id="@+id/herkunft_schweine_bauer4_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer4_ort" />
+                            android:text="@string/herkunft_schweine_bauer4_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -210,9 +213,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer3_button"
+                            android:id="@+id/herkunft_schweine_bauer3_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer3" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -223,9 +226,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer4_button"
+                            android:id="@+id/herkunft_schweine_bauer4_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer4" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -242,9 +245,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer5_name"
+                            android:id="@+id/herkunft_schweine_bauer5_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer5_name" />
+                            android:text="@string/herkunft_schweine_bauer5_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -255,9 +258,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer6_name"
+                            android:id="@+id/herkunft_schweine_bauer6_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer6_name" />
+                            android:text="@string/herkunft_schweine_bauer6_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -274,9 +277,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer5_ort"
+                            android:id="@+id/herkunft_schweine_bauer5_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer5_ort" />
+                            android:text="@string/herkunft_schweine_bauer5_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -287,9 +290,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer6_ort"
+                            android:id="@+id/herkunft_schweine_bauer6_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer6_ort" />
+                            android:text="@string/herkunft_schweine_bauer6_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -307,9 +310,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer5_button"
+                            android:id="@+id/herkunft_schweine_bauer5_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer5" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -321,9 +324,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer6_button"
+                            android:id="@+id/herkunft_schweine_bauer6_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer6" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -340,9 +343,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer7_name"
+                            android:id="@+id/herkunft_schweine_bauer7_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer7_name" />
+                            android:text="@string/herkunft_schweine_bauer7_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -353,9 +356,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer8_name"
+                            android:id="@+id/herkunft_schweine_bauer8_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer8_name" />
+                            android:text="@string/herkunft_schweine_bauer8_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -372,9 +375,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer7_ort"
+                            android:id="@+id/herkunft_schweine_bauer7_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer7_ort" />
+                            android:text="@string/herkunft_schweine_bauer7_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -385,9 +388,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer8_ort"
+                            android:id="@+id/herkunft_schweine_bauer8_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer8_ort" />
+                            android:text="@string/herkunft_schweine_bauer8_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -404,9 +407,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer7_button"
+                            android:id="@+id/herkunft_schweine_bauer7_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer7" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -417,9 +420,9 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer8_button"
+                            android:id="@+id/herkunft_schweine_bauer8_button"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer8" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -434,11 +437,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_gravity="left|center_horizontal"
-                        android:gravity="left|bottom"
+                        android:gravity="left"
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/herkunft_rinder_first_page_button_zurueck"
+                            android:id="@+id/herkunft_schweine_first_page_button_zurueck"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:background="@drawable/button"
@@ -453,13 +456,13 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="100dp">
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_first_page_first_bullet"
+                            android:id="@+id/herkunft_schweine_first_page_first_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -470,7 +473,7 @@
                             android:src="@drawable/bullethole" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_first_page_sec_bullet"
+                            android:id="@+id/herkunft_schweine_frist_page_sec_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -481,18 +484,7 @@
                             android:src="@drawable/bullet" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_first_page_third_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_first_page_fourth_bullet"
+                            android:id="@+id/herkunft_schweine_first_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -520,7 +512,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/herkunft_rinder_first_page_next"
+                        android:id="@+id/herkunft_schweine_first_page_next"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -531,7 +523,9 @@
                         android:scaleType="fitCenter"
                         android:src="@drawable/next" />
                 </LinearLayout>
+
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -554,7 +548,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/herkunft_rinder_sec_page_back"
+                        android:id="@+id/herkunft_schweine_sec_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -565,22 +559,24 @@
                         android:scaleType="fitCenter"
                         android:src="@drawable/back" />
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1"
-                android:layout_weight="0.2"
-                android:gravity="center|center_horizontal">
+                android:layout_weight="0.2">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="bottom"
-                    android:layout_weight="0.4">
+                    android:layout_weight="0.7"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -590,9 +586,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer9_name"
+                            android:id="@+id/herkunft_schweine_bauer9_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer9_name" />
+                            android:text="@string/herkunft_schweine_bauer9_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -603,9 +599,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer10_name"
+                            android:id="@+id/herkunft_schweine_bauer10_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer10_name" />
+                            android:text="@string/herkunft_schweine_bauer10_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -622,9 +618,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer9_ort"
+                            android:id="@+id/herkunft_schweine_bauer9_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer9_ort" />
+                            android:text="@string/herkunft_schweine_bauer9_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -635,106 +631,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer10_ort"
+                            android:id="@+id/herkunft_schweine_bauer10_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer10_ort" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer9_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer10_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer11_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer11_name" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center|center_horizontal">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer12_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer12_name" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer11_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer11_ort" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer12_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer12_ort" />
+                            android:text="@string/herkunft_schweine_bauer10_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -745,14 +644,111 @@
                     android:paddingBottom="10dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:layout_weight="1"
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer11_button"
+                            android:id="@+id/herkunft_schweine_bauer9_button"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/schweine_bauer1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/herkunft_schweine_bauer10_button"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/schweine_bauer1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/herkunft_schweine_bauer11_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_schweine_bauer11_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/herkunft_schweine_bauer12_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_schweine_bauer12_name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/herkunft_schweine_bauer11_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_schweine_bauer11_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/herkunft_schweine_bauer12_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_schweine_bauer12_ort" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/herkunft_schweine_bauer11_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -760,14 +756,14 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_weight="1"
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer12_button"
+                            android:id="@+id/herkunft_schweine_bauer12_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -788,9 +784,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer13_name"
+                            android:id="@+id/herkunft_schweine_bauer13_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer13_name" />
+                            android:text="@string/herkunft_schweine_bauer13_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -801,9 +797,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer14_name"
+                            android:id="@+id/herkunft_schweine_bauer14_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer14_name" />
+                            android:text="@string/herkunft_schweine_bauer14_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -820,9 +816,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer13_ort"
+                            android:id="@+id/herkunft_schweine_bauer13_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer13_ort" />
+                            android:text="@string/herkunft_schweine_bauer13_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -833,9 +829,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer14_ort"
+                            android:id="@+id/herkunft_schweine_bauer14_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer14_ort" />
+                            android:text="@string/herkunft_schweine_bauer14_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -853,7 +849,7 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer13_button"
+                            android:id="@+id/herkunft_schweine_bauer13_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -869,7 +865,7 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer14_button"
+                            android:id="@+id/herkunft_schweine_bauer14_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -890,9 +886,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer15_name"
+                            android:id="@+id/herkunft_schweine_bauer15_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer15_name" />
+                            android:text="@string/herkunft_schweine_bauer15_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -903,9 +899,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer16_name"
+                            android:id="@+id/herkunft_schweine_bauer16_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer16_name" />
+                            android:text="@string/herkunft_schweine_bauer16_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -922,9 +918,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer15_ort"
+                            android:id="@+id/herkunft_schweine_bauer15_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer15_ort" />
+                            android:text="@string/herkunft_schweine_bauer15_ort" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -935,9 +931,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer16_ort"
+                            android:id="@+id/herkunft_schweine_bauer16_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer16_ort" />
+                            android:text="@string/herkunft_schweine_bauer16_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -954,7 +950,7 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer15_button"
+                            android:id="@+id/herkunft_schweine_bauer15_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -969,7 +965,7 @@
                         android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer16_button"
+                            android:id="@+id/herkunft_schweine_bauer16_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -992,7 +988,7 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/herkunft_rinder_sec_page_button_zurueck"
+                            android:id="@+id/herkunft_schweine_sec_page_button_zurueck"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:background="@drawable/button"
@@ -1007,13 +1003,13 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="100dp">
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_sec_page_first_bullet"
+                            android:id="@+id/herkunft_schweine_sec_page_first_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -1024,7 +1020,7 @@
                             android:src="@drawable/bullet" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_sec_page_sec_bullet"
+                            android:id="@+id/herkunft_schweine_sec_page_sec_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -1035,18 +1031,7 @@
                             android:src="@drawable/bullethole" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_sec_page_third_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_sec_page_fourth_bullet"
+                            android:id="@+id/herkunft_schweine_sec_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -1073,7 +1058,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/herkunft_rinder_sec_page_next"
+                        android:id="@+id/herkunft_schweine_sec_page_next"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -1108,7 +1093,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/herkunft_rinder_third_page_back"
+                        android:id="@+id/herkunft_schweine_third_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="left"
@@ -1119,21 +1104,23 @@
                         android:scaleType="fitCenter"
                         android:src="@drawable/back" />
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1"
-                android:layout_weight="0.2"
-                android:gravity="center">
+                android:layout_weight="0.2">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="bottom"
                     android:gravity="bottom">
 
                     <LinearLayout
@@ -1144,9 +1131,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer17_name"
+                            android:id="@+id/herkunft_schweine_bauer17_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer17_name" />
+                            android:text="@string/herkunft_schweine_bauer17_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1157,9 +1144,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer18_name"
+                            android:id="@+id/herkunft_schweine_bauer18_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer18_name" />
+                            android:text="@string/herkunft_schweine_bauer18_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1172,26 +1159,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer17_ort"
+                            android:id="@+id/herkunft_schweine_bauer17_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer17_ort" />
+                            android:text="@string/herkunft_schweine_bauer17_ort" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer18_ort"
+                            android:id="@+id/herkunft_schweine_bauer18_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer18_ort" />
+                            android:text="@string/herkunft_schweine_bauer18_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1205,11 +1192,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer17_button"
+                            android:id="@+id/herkunft_schweine_bauer17_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1220,11 +1207,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer18_button"
+                            android:id="@+id/herkunft_schweine_bauer18_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1245,9 +1232,9 @@
                         android:layout_weight="1">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer19_name"
+                            android:id="@+id/herkunft_schweine_bauer19_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer19_name" />
+                            android:text="@string/herkunft_schweine_bauer19_name" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1258,9 +1245,9 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer20_name"
+                            android:id="@+id/herkunft_schweine_bauer20_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer20_name" />
+                            android:text="@string/herkunft_schweine_bauer20_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1273,26 +1260,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer19_ort"
+                            android:id="@+id/herkunft_schweine_bauer19_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer19_ort" />
+                            android:text="@string/herkunft_schweine_bauer19_ort" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer20_ort"
+                            android:id="@+id/herkunft_schweine_bauer20_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer20_ort" />
+                            android:text="@string/herkunft_schweine_bauer20_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1306,11 +1293,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer19_button"
+                            android:id="@+id/herkunft_schweine_bauer19_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1321,11 +1308,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer20_button"
+                            android:id="@+id/herkunft_schweine_bauer20_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1342,26 +1329,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer21_name"
+                            android:id="@+id/herkunft_schweine_bauer21_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer21_name" />
+                            android:text="@string/herkunft_schweine_bauer21_name" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer22_name"
+                            android:id="@+id/herkunft_schweine_bauer22_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer22_name" />
+                            android:text="@string/herkunft_schweine_bauer22_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1374,26 +1361,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer21_ort"
+                            android:id="@+id/herkunft_schweine_bauer21_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer21_ort" />
+                            android:text="@string/herkunft_schweine_bauer21_ort" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer22_ort"
+                            android:id="@+id/herkunft_schweine_bauer22_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer22_ort" />
+                            android:text="@string/herkunft_schweine_bauer22_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1407,11 +1394,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer21_button"
+                            android:id="@+id/herkunft_schweine_bauer21_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1423,11 +1410,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:touchscreenBlocksFocus="true"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer22_button"
+                            android:id="@+id/herkunft_schweine_bauer22_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1444,26 +1431,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer23_name"
+                            android:id="@+id/herkunft_schweine_bauer23_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer23_name" />
+                            android:text="@string/herkunft_schweine_bauer23_name" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer24_name"
+                            android:id="@+id/herkunft_schweine_bauer24_name"
                             style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer24_name" />
+                            android:text="@string/herkunft_schweine_bauer24_name" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1476,43 +1463,43 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer23_ort"
+                            android:id="@+id/herkunft_schweine_bauer23_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer23_ort" />
+                            android:text="@string/herkunft_schweine_bauer23_ort" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <TextView
-                            android:id="@+id/herkunft_rinder_bauer24_ort"
+                            android:id="@+id/herkunft_schweine_bauer24_ort"
                             style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer24_ort" />
+                            android:text="@string/herkunft_schweine_bauer24_ort" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer23_button"
+                            android:id="@+id/herkunft_schweine_bauer23_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1523,11 +1510,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center">
 
                         <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer24_button"
+                            android:id="@+id/herkunft_schweine_bauer24_button"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1550,7 +1537,7 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/herkunft_rinder_third_page_button_zurueck"
+                            android:id="@+id/herkunft_schweine_third_page_button_zurueck"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:background="@drawable/button"
@@ -1571,7 +1558,7 @@
                         android:paddingRight="100dp">
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_third_page_first_bullet"
+                            android:id="@+id/herkunft_schweine_third_page_first_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -1582,7 +1569,7 @@
                             android:src="@drawable/bullet" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_third_page_sec_bullet"
+                            android:id="@+id/herkunft_schweine_third_page_sec_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="7dp"
@@ -1593,476 +1580,7 @@
                             android:src="@drawable/bullet" />
 
                         <ImageView
-                            android:id="@+id/herkunft_rinder_third_page_third_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullethole" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_third_page_fourth_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center|center_horizontal"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right|center_horizontal"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/herkunft_rinder_third_page_next"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:adjustViewBounds="true"
-                        android:background="@android:color/transparent"
-                        android:maxHeight="90dp"
-                        android:maxWidth="90dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/next" />
-                </LinearLayout>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:gravity="left|center|center_horizontal"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/herkunft_rinder_fourth_page_back"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:adjustViewBounds="true"
-                        android:background="@android:color/transparent"
-                        android:maxHeight="90dp"
-                        android:maxWidth="90dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/back" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:weightSum="1"
-                android:layout_weight="0.2"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="bottom"
-                    android:layout_weight="0.2">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer25_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer25_name" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer26_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer26_name" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer25_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer25_ort" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer26_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer26_ort" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer25_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer26_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer27_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer27_name" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer28_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer28_name" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer27_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer27_ort" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer28_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer28_ort" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer27_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer28_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer29_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer29_name" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer30_name"
-                            style="@style/herkunft_bauern_name"
-                            android:text="@string/herkunft_rinder_bauer30_name" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer29_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer29_ort" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/herkunft_rinder_bauer30_ort"
-                            style="@style/herkunft_bauern_ort"
-                            android:text="@string/herkunft_rinder_bauer30_ort" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer29_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:touchscreenBlocksFocus="true"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/herkunft_rinder_bauer30_button"
-                            style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:orientation="horizontal"
-                    android:paddingTop="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_gravity="left|center_horizontal"
-                        android:gravity="left"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/herkunft_rinder_fourth_page_button_zurueck"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/button"
-                            android:shadowColor="#A8A8A8"
-                            android:shadowDx="0"
-                            android:shadowDy="0"
-                            android:shadowRadius="5"
-                            android:text="@string/handling_zurueck"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="horizontal"
-                        android:paddingRight="100dp">
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_fourth_page_first_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_fourth_page_sec_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_fourth_page_third_bullet"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="7dp"
-                            android:adjustViewBounds="true"
-                            android:maxHeight="15dp"
-                            android:maxWidth="15dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/bullet" />
-
-                        <ImageView
-                            android:id="@+id/herkunft_rinder_fourth_page_fourth_bullet"
+                            android:id="@+id/herkunft_schweine_third_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
@@ -2080,7 +1598,10 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical"
-                android:layout_weight="1" />
+                android:layout_weight="1">
+
+            </LinearLayout>
         </LinearLayout>
+
     </ViewFlipper>
 </LinearLayout>
