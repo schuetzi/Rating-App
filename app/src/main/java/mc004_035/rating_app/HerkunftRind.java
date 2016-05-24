@@ -112,7 +112,10 @@ public class HerkunftRind extends Carousel implements View.OnClickListener, Anim
         button.setOnClickListener(this);
         button = (Button) findViewById(R.id.herkunft_rinder_fourth_page_button_zurueck);
         button.setOnClickListener(this);
+
+
     }
+
 
     @Override
     public boolean onTouchEvent(MotionEvent touch) {
@@ -129,17 +132,7 @@ public class HerkunftRind extends Carousel implements View.OnClickListener, Anim
     }
 
     public void setTextVisible(View v) {
-        TextView text;
-        StringBuffer id = new StringBuffer();
-        id.append(getResources().getResourceName(v.getId()));
-        id.delete(id.length() - 6, id.length());
-        id.append("name");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
-        text.setVisibility(View.VISIBLE);
-        id.delete(id.length() - 4, id.length());
-        id.append("ort");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(),"id", getPackageName()));
-        text.setVisibility(View.VISIBLE);
+        super.setTextVisible(v);
     }
     
     @Override

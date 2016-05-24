@@ -2,7 +2,6 @@ package mc004_035.rating_app;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Matrix;
@@ -45,7 +44,7 @@ public class Homescreen extends Activity {
         imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_referenzen), Referenzen.class, filter));
     }
 
-    private class CustomListener implements View.OnTouchListener {
+    public class CustomListener implements View.OnTouchListener {
 
         final int buttonWidth = 220, buttonHeight = 220;
 

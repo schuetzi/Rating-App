@@ -128,13 +128,6 @@
     <string name="ohneVerdTitel">ohne Verdickungsmittel</string>
     <string name="ohneVerdText">In unserer gesamten Produktpalette sind keine Verdickungsmittel\nenthalten!</string>
 
-    <string name="handling_var1_titel">Variante 1: Leberkäseofen</string>
-    <string name="handling_var1_text"><ol><li>first\n</li><li>second\n</li></ol></string>
-    <string name="handling_var2_titel">Variante 2: Plattengrill</string>
-    <string name="handling_var2_text"><ol><li>first\n</li><li>second\n</li></ol></string>
-    <string name="handling_var3_titel">Variante 3: HSG</string>
-    <string name="handling_var3_text"><ol><li>first\n</li><li>second\n</li></ol></string>
-
     <string name="BeschreibungClassic">
         Die echte Naturkruste verleiht dem Klassiker\nden herzhaften und feinen Geschmack.
     </string>
@@ -150,4 +143,42 @@
     <string name="BeschreibungChiliCheese">Bla</string>
     <string name="BeschreibungChili">Bla</string>
     <string name="BeschreibungPuteChili">Bla</string>
+
+    <string name="referenzen_titel_1">Aral Tankstelle</string>
+    <string name="referenzen_text_1">Günter Kruse, München, Deutschland</string>
+
+    <string name="referenzen_titel_2">BP Tankstelle</string>
+    <string name="referenzen_text_2">Hermann Hörandner, Grieskirchen, Österreich</string>
+
+    <string name="referenzen_titel_3">Eni Servicestation</string>
+    <string name="referenzen_text_3">Thomas Echter, Kempten, Deutschland</string>
+
+    <string name="referenzen_titel_4">HEM Tankstelle</string>
+    <string name="referenzen_text_4">Margit Wilke, Eicklingen, Deutschland</string>
+
+    <string name="referenzen_titel_5">IQ Autohof</string>
+    <string name="referenzen_text_5">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+
+    <string name="referenzen_titel_6">IQ Autohof</string>
+    <string name="referenzen_text_6">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+
+    <string name="referenzen_titel_7">IQ Autohof</string>
+    <string name="referenzen_text_7">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+
+    <string name="referenzen_titel_8">IQ Autohof</string>
+    <string name="referenzen_text_8">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+
+    <string name="referenzen_titel_9">OMV VIVA</string>
+    <string name="referenzen_text_9">Herbert Müller, Wels, Österreich</string>
+
+    <string name="referenzen_titel_10">Shell Tankstelle</string>
+    <string name="referenzen_text_10">Walter Cernkovic, St. Pankraz, Österreich</string>
+
+    <string name="referenzen_titel_11">Shell Tankstelle</string>
+    <string name="referenzen_text_11">Walter Cernkovic, St. Pankraz, Österreich</string>
+
+    <string name="referenzen_titel_12">Turmöl Tankstelle</string>
+    <string name="referenzen_text_12">Walter Mazzulini, Brunn am Gebirge, Österreich</string>
+
+
 </resources>

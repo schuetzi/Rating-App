@@ -52,31 +52,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp"
-                android:layout_weight="1">
+                android:paddingTop="120dp"
+                android:layout_weight="0.5">
 
                 <ImageView
                     android:id="@+id/handling_var1_pic"
                     style="@style/handling_pic"
-                    android:src="@drawable/ofen" />
-
-                <TextView
-                    android:id="@+id/handling_var1_titel"
-                    style="@style/handling_titel"
-                    android:text="@string/handling_var1_titel" />
-
-                <TextView
-                    android:layout_width="match_parent"
+                    android:src="@drawable/handling_var_1"
                     android:layout_height="wrap_content"
-                    android:id="@+id/handling_var1_text"
-                    style="@style/handling_text"
-                    android:text="@string/handling_var1_text" />
+                    android:layout_width="wrap_content"
+                    android:layout_weight="2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_weight="0.01"
+                    android:paddingTop="5dp">
 
                     <ImageView
                         android:id="@+id/handling_var1_first_bullet"
@@ -177,30 +170,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp"
-                android:layout_weight="1">
+                android:paddingTop="120dp"
+                android:layout_weight="0.5">
 
                 <ImageView
                     android:id="@+id/handling_var2_pic"
                     style="@style/handling_pic"
-                    android:src="@drawable/ofen" />
-
-                <TextView
-                    android:id="@+id/handling_var2_titel"
-                    style="@style/handling_titel"
-                    android:text="@string/handling_var2_titel" />
-
-                <TextView
-                    android:id="@+id/handling_var2_text"
-                    style="@style/handling_text"
-                    android:text="@string/handling_var2_text"
-                    android:layout_width="match_parent" />
+                    android:src="@drawable/handling_var_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_weight="0.01"
+                    android:paddingTop="5dp">
 
                     <ImageView
                         android:id="@+id/handling_var2_first_bullet"
@@ -296,30 +283,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingTop="130dp"
-                android:layout_weight="1">
+                android:paddingTop="120dp"
+                android:layout_weight="0.5">
 
                 <ImageView
                     android:id="@+id/handling_var3_pic"
                     style="@style/handling_pic"
-                    android:src="@drawable/ofen" />
-
-                <TextView
-                    android:id="@+id/handling_var3_titel"
-                    style="@style/handling_titel"
-                    android:text="@string/handling_var3_titel" />
-
-                <TextView
-                    android:id="@+id/handling_var3_text"
-                    style="@style/handling_text"
-                    android:text="@string/handling_var3_text"
-                    android:layout_width="match_parent" />
+                    android:src="@drawable/handling_var_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_weight="0.01"
+                    android:paddingTop="5dp">
 
                     <ImageView
                         android:id="@+id/handling_var3_first_bullet"

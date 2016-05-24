@@ -2,7 +2,14 @@ package mc004_035.rating_app;
 
 import android.app.Activity;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
+
+import java.util.ArrayList;
 
 
 public class Carousel extends Activity {
@@ -50,4 +57,49 @@ public class Carousel extends Activity {
         }
         return false;
     }
+
+    public void setTextVisible(View v) {
+        TextView text;
+        StringBuffer id = new StringBuffer();
+        id.append(getResources().getResourceName(v.getId()));
+        id.delete(id.length() - 6, id.length());
+        id.append("name");
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
+        text.setVisibility(View.VISIBLE);
+        id.delete(id.length() - 4, id.length());
+        id.append("ort");
+        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
+        text.setVisibility(View.VISIBLE);
+    }
+
+//    public void attachToButton(View root, View.OnClickListener listener) {
+//        ArrayList<View> elements = root.getTouchables();
+//        for (View v : elements) {
+//            if (v instanceof Button) {
+//                Button b = (Button) v;
+//                b.setOnClickListener(listener);
+//            }
+//        }
+//    }
+//
+//    public void attachToImageButton(View root, View.OnClickListener listener) {
+//        ArrayList<View> elements = root.getTouchables();
+//        for (View v : elements) {
+//            if (v instanceof ImageButton) {
+//                ImageButton imageButton = (ImageButton) v;
+//                imageButton.setOnClickListener(listener);
+//            }
+//        }
+//    }
+//
+//    public void attachToImageView(View root, View.OnClickListener listener) {
+//        ArrayList<View> elements = root.getTouchables();
+//        for (View v : elements) {
+//            if (v instanceof ImageView) {
+//                ImageView imageView = (ImageView) v;
+//                imageView.setOnClickListener(listener);
+//            }
+//        }
+//    }
+
 }

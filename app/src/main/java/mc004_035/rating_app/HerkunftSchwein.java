@@ -110,17 +110,7 @@ public class HerkunftSchwein extends Carousel implements View.OnClickListener, A
     }
 
     public void setTextVisible(View v) {
-        TextView text;
-        StringBuffer id = new StringBuffer();
-        id.append(getResources().getResourceName(v.getId()));
-        id.delete(id.length() - 6, id.length());
-        id.append("name");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
-        text.setVisibility(View.VISIBLE);
-        id.delete(id.length() - 4, id.length());
-        id.append("ort");
-        text = (TextView) findViewById(getResources().getIdentifier(id.toString(), "id", getPackageName()));
-        text.setVisibility(View.VISIBLE);
+        super.setTextVisible(v);
     }
 
     @Override
