@@ -16,7 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,22 +33,23 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="0.22"
-                android:gravity="center">
+                android:gravity="bottom|center"
+                android:weightSum="1">
 
                 <ImageView
                     android:id="@+id/handling_var1_pic"
                     style="@style/handling_pic"
                     android:src="@drawable/handling_var_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:gravity="center|center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center|center_horizontal"
                     android:orientation="horizontal"
-                    android:paddingTop="10dp">
+                    android:paddingTop="10dp"
+                    android:layout_weight="0.4">
 
                     <ImageView
                         android:id="@+id/handling_var1_first_bullet"
@@ -71,7 +73,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingBottom="20dp"
-                    android:paddingLeft="20dp"
                     android:gravity="left">
 
                     <Button
@@ -147,21 +148,23 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="0.22"
-                android:gravity="center">
+                android:gravity="bottom|center"
+                android:weightSum="1">
 
                 <ImageView
                     android:id="@+id/handling_var2_pic"
                     style="@style/handling_pic"
                     android:src="@drawable/handling_var_2"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center|center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp">
 
                     <ImageView
                         android:id="@+id/handling_var2_first_bullet"
@@ -185,7 +188,6 @@
                     android:gravity="bottom"
                     android:orientation="vertical"
                     android:layout_gravity="left|center_horizontal"
-                    android:paddingLeft="20dp"
                     android:paddingBottom="20dp">
 
                     <Button
@@ -258,21 +260,23 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="0.22"
-                android:gravity="center">
+                android:gravity="bottom|center"
+                android:weightSum="1">
 
                 <ImageView
                     android:id="@+id/handling_var3_pic"
                     style="@style/handling_pic"
                     android:src="@drawable/handling_var_3"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:gravity="top|center|center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.4"
+                    android:paddingTop="10dp">
 
                     <ImageView
                         android:id="@+id/handling_var3_first_bullet"
@@ -295,7 +299,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="bottom|center|center_horizontal"
                     android:orientation="vertical"
-                    android:paddingLeft="20dp"
                     android:layout_gravity="left|center_horizontal"
                     android:paddingBottom="20dp">
 

@@ -146,39 +146,46 @@
 
     <string name="referenzen_titel_1">Aral Tankstelle</string>
     <string name="referenzen_text_1">Günter Kruse, München, Deutschland</string>
-
     <string name="referenzen_titel_2">BP Tankstelle</string>
     <string name="referenzen_text_2">Hermann Hörandner, Grieskirchen, Österreich</string>
-
     <string name="referenzen_titel_3">Eni Servicestation</string>
     <string name="referenzen_text_3">Thomas Echter, Kempten, Deutschland</string>
-
     <string name="referenzen_titel_4">HEM Tankstelle</string>
     <string name="referenzen_text_4">Margit Wilke, Eicklingen, Deutschland</string>
-
     <string name="referenzen_titel_5">IQ Autohof</string>
     <string name="referenzen_text_5">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
-
     <string name="referenzen_titel_6">IQ Autohof</string>
     <string name="referenzen_text_6">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
-
     <string name="referenzen_titel_7">IQ Autohof</string>
     <string name="referenzen_text_7">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
-
     <string name="referenzen_titel_8">IQ Autohof</string>
     <string name="referenzen_text_8">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
-
     <string name="referenzen_titel_9">OMV VIVA</string>
     <string name="referenzen_text_9">Herbert Müller, Wels, Österreich</string>
-
     <string name="referenzen_titel_10">Shell Tankstelle</string>
     <string name="referenzen_text_10">Walter Cernkovic, St. Pankraz, Österreich</string>
-
     <string name="referenzen_titel_11">Shell Tankstelle</string>
     <string name="referenzen_text_11">Walter Cernkovic, St. Pankraz, Österreich</string>
-
     <string name="referenzen_titel_12">Turmöl Tankstelle</string>
     <string name="referenzen_text_12">Walter Mazzulini, Brunn am Gebirge, Österreich</string>
+
+    <string name="qualitaet_text1">Als erstes Unternehmen unserer Branche stellen wir unser gesamtes Sortiment zu 100 % gentechnikfrei her. Vom Feld bis auf den Teller wird die Gentechnikfreiheit mit Überzeugung gelebt und von der agroVet GmbH streng kontrolliert.</string>
+    <string name="qualitaet_text2">Für unsere gourmetfeinen Produkte verarbeiten wir nur hochwertiges Fleisch das zu 100 % aus Österreich kommt! Die Einhaltung der AMA Richtlinien werden regelmäßig streng kontrolliert.</string>
+    <string name="qualitaet_text3">Unsere gschmackigen Produkte von gourmetfein brauchen keine künstliche Farbkorrektur! Wir verwenden nur natürliche Farbstoffe, wie zum Beispiel Paprika, zur Färbung der Produkte.</string>
+    <string name="qualitaet_text4">Verdickungsmittel sind Lebensmittelzusatzstoffe, die Produkten eine gewünschte Konsistenz verleihen. Auf diese Schummelstoffe können wir von gourmetfein mit gutem Gewissen verzichten.</string>
+    <string name="qualitaet_text5">Wir bei gourmetfein müssen nicht mit Bindemitteln, wie z.B. Kartoffelstärke nachhelfen, denn in unsere Produkte kommt nur Frischfleisch in ganzen Teilstücken. So können auch Menschen mit Glutenunverträglichkeit unsere Produkte sorglos genießen.</string>
+    <string name="qualitaet_text6">Der Unterschied bei den verwendeten Rohstoffen!</string>
+    <string name="qualitaet_text7">Der Unterschied in der Zubereitung!</string>
+    <string name="qualitaet_text8">Der Unterschied beim Backvorgang!</string>
+
+    <string name="qualitaet_titel1">OGT</string>
+    <string name="qualitaet_titel2">AMA</string>
+    <string name="qualitaet_titel3">Ohne künstliche Farbstoffe</string>
+    <string name="qualitaet_titel4">Ohne Verdickungsmittel</string>
+    <string name="qualitaet_titel5">Glutenfrei</string>
+    <string name="qualitaet_titel6">Rohstoff</string>
+    <string name="qualitaet_titel7">Zubereitung</string>
+    <string name="qualitaet_titel8">Backvorgang</string>
 
 
 </resources>

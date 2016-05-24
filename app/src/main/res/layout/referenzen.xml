@@ -1482,8 +1482,7 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_12"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
             </LinearLayout>
 
