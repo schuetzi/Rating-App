@@ -63,31 +63,6 @@
                     android:layout_width="wrap_content"
                     android:layout_weight="2" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_weight="0.01"
-                    android:paddingTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/handling_var1_first_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullethole" />
-
-                    <ImageView
-                        android:id="@+id/handling_var1_sec_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet" />
-
-                    <ImageView
-                        android:id="@+id/handling_var1_third_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet" />
-
-                </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -181,30 +156,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_weight="0.01"
-                    android:paddingTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/handling_var2_first_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet"/>
-
-                    <ImageView
-                        android:id="@+id/handling_var2_sec_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullethole" />
-
-                    <ImageView
-                        android:id="@+id/handling_var2_third_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet" />
-                </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -293,30 +244,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_weight="0.01"
-                    android:paddingTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/handling_var3_first_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet" />
-
-                    <ImageView
-                        android:id="@+id/handling_var3_sec_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullet" />
-
-                    <ImageView
-                        android:id="@+id/handling_var3_third_bullet"
-                        style="@style/handling_bullet"
-                        android:src="@drawable/bullethole" />
-                </LinearLayout>
 
             </LinearLayout>
 
