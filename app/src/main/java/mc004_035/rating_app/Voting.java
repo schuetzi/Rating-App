@@ -6,27 +6,40 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
+import android.widget.ViewFlipper;
 
 
 public class Voting extends Activity implements View.OnClickListener {
+
+    static int currView = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.voting);
-        addClickListener(getResources().getStringArray(R.array.sorten));
-        findViewById(R.id.zurueckVoting).setOnClickListener(this);
-        findViewById(R.id.weiterGewinnspiel).setOnClickListener(this);
+        ViewFlipper flipper = (ViewFlipper) findViewById(R.id.VotingFlipper);
+        if (currView == 2)
+            flipper.showNext();
+        else if (currView == 3)
+            flipper.showPrevious();
+        addClickListeners(getResources().getStringArray(R.array.sorten));
+        findViewById(R.id.zurueckVoting1).setOnClickListener(this);
+        findViewById(R.id.zurueckVoting2).setOnClickListener(this);
+        findViewById(R.id.zurueckVoting3).setOnClickListener(this);
+        findViewById(R.id.weiterGewinnspiel1).setOnClickListener(this);
+        findViewById(R.id.weiterGewinnspiel2).setOnClickListener(this);
+        findViewById(R.id.weiterGewinnspiel3).setOnClickListener(this);
     }
 
-    private void addClickListener(String[] sorten) {
+    private void addClickListeners(String[] sorten) {
         String packName = getPackageName(), prefix1 = "ButtonSorte", prefix2 = "RatingBar";
         Resources resources = getResources();
         for (final String sorte: sorten) {
-            ImageButton button = (ImageButton) findViewById(
+            final ImageButton button = (ImageButton) findViewById(
                     resources.getIdentifier(prefix1 + sorte, "id", packName)
             );
             final RatingBar bar = (RatingBar) findViewById(
@@ -41,7 +54,61 @@ public class Voting extends Activity implements View.OnClickListener {
                     startActivityForResult(intent, 1);
                 }
             });
+            bar.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent ev) {
+                    if (ev.getAction() == MotionEvent.ACTION_UP)
+                        button.performClick();
+                    return true;
+                }
+            });
         }
+        View.OnClickListener buttonListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ViewFlipper flipper = (ViewFlipper) findViewById(R.id.VotingFlipper);
+                switch (v.getId()) {
+                    case R.id.ButtonLeberkaese:
+                        if (currView == 2) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_left);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_right);
+                            flipper.showPrevious();
+                        } else if (currView == 3) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_far_left);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_far_right);
+                            flipper.showNext();
+                        }
+                        currView = 1;
+                        break;
+                    case R.id.ButtonWuerstel:
+                        if (currView == 1) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_right);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_left);
+                            flipper.showNext();
+                        } else if (currView == 3) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_left);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_right);
+                            flipper.showPrevious();
+                        }
+                        currView = 2;
+                        break;
+                    default:
+                        if (currView == 1) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_far_right);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_far_left);
+                            flipper.showPrevious();
+                        } else if (currView == 2) {
+                            flipper.setInAnimation(Voting.this, R.anim.slide_in_from_right);
+                            flipper.setOutAnimation(Voting.this, R.anim.slide_out_to_left);
+                            flipper.showNext();
+                        }
+                        currView = 3;
+                }
+            }
+        };
+        findViewById(R.id.ButtonLeberkaese).setOnClickListener(buttonListener);
+        findViewById(R.id.ButtonWuerstel).setOnClickListener(buttonListener);
+        findViewById(R.id.ButtonWurst).setOnClickListener(buttonListener);
     }
 
     @Override
@@ -54,13 +121,36 @@ public class Voting extends Activity implements View.OnClickListener {
 
     @Override
     public void onBackPressed() {
+        int i;
+        Resources resources = getResources();
+        String[] sorten = resources.getStringArray(R.array.sorten);
+        for (i = 0; i < sorten.length; ++i) {
+            RatingBar bar = (RatingBar) findViewById(
+                    resources.getIdentifier("RatingBar" + sorten[i], "id", getPackageName())
+            );
+            if (bar.getRating() > 0)
+                break;
+        }
+        if (i == sorten.length) {
+            backToHome();
+            currView = 1;
+            finish();
+            return;
+        }
         new AlertDialog.Builder(this)
                 .setTitle("Bewertungen beibehalten?")
                 .setMessage("Wie soll mit den vorgenommenen Bewertungen verfahren werden?")
+                .setPositiveButton("Beibehalten", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        backToHome();
+                    }
+                })
                 .setNegativeButton("Verwerfen", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         backToHome();
+                        currView = 1;
                         finish();
                     }
                 })
@@ -68,7 +158,8 @@ public class Voting extends Activity implements View.OnClickListener {
     }
 
     public void onClick(View v) {
-        if (v == findViewById(R.id.zurueckVoting)) {
+        int id = v.getId();
+        if (id == R.id.zurueckVoting1 || id == R.id.zurueckVoting2 || id == R.id.zurueckVoting3) {
             onBackPressed();
         } else {
             // startActivity(new Intent(this, VotingSubmit.class));}

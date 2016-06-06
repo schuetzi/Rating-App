@@ -2,220 +2,581 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/background"
-    android:paddingBottom="20dp"
-    android:paddingEnd="150dp"
-    android:paddingStart="150dp"
-    android:paddingTop="100dp"
+    android:paddingBottom="15dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="15dp"
+    android:paddingTop="88dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:weightSum="2.98">
 
-        <LinearLayout style="@style/ButtonBarContainer">
+        <ImageButton
+            android:background="@drawable/leberkaese"
+            android:id="@+id/ButtonLeberkaese"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/ButtonSorteClassic"
-                android:src="@drawable/classic"
-                style="@style/VotingButton" />
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="1dp" />
 
-            <RatingBar android:id="@+id/RatingBarClassic" style="@style/RatingBar" />
+        <ImageButton
+            android:background="@drawable/wuerstel"
+            android:id="@+id/ButtonWuerstel"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
 
-        </LinearLayout>
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="1dp" />
 
-        <LinearLayout style="@style/ButtonBarContainer">
-
-            <ImageButton
-                android:id="@+id/ButtonSorteReinePute"
-                android:src="@drawable/reine_pute"
-                style="@style/VotingButton" />
-
-            <RatingBar android:id="@+id/RatingBarReinePute" style="@style/RatingBar" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/ButtonBarContainer">
-
-            <ImageButton
-                android:id="@+id/ButtonSortePikant"
-                android:src="@drawable/pikant"
-                style="@style/VotingButton" />
-
-            <RatingBar android:id="@+id/RatingBarPikant" style="@style/RatingBar" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/ButtonBarContainer">
-
-            <ImageButton
-                android:id="@+id/ButtonSorteKaese"
-                android:src="@drawable/kaese"
-                style="@style/VotingButton" />
-
-            <RatingBar android:id="@+id/RatingBarKaese" style="@style/RatingBar" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/ButtonBarContainer">
-
-            <ImageButton
-                android:id="@+id/ButtonSortePuteKaese"
-                android:src="@drawable/pute_kaese"
-                style="@style/VotingButton" />
-
-            <RatingBar android:id="@+id/RatingBarPuteKaese" style="@style/RatingBar" />
-
-        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/wurst"
+            android:id="@+id/ButtonWurst"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
 
     </LinearLayout>
 
-    <Space
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:layout_width="match_parent">
-    </Space>
+    <ViewFlipper
+        android:id="@+id/VotingFlipper"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:layout_width="0dp">
 
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
 
-        <LinearLayout style="@style/ButtonBarContainer">
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
 
-            <ImageButton
-                android:id="@+id/ButtonSorteTomateMozzarella"
-                android:src="@drawable/tomate_mozzarella"
-                style="@style/VotingButton" />
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <RatingBar android:id="@+id/RatingBarTomateMozzarella" style="@style/RatingBar" />
+                    <ImageButton
+                        android:id="@+id/ButtonSorteClassic"
+                        android:src="@drawable/classic"
+                        style="@style/VotingButton" />
 
-        </LinearLayout>
+                    <RatingBar android:id="@+id/RatingBarClassic" style="@style/RatingBar" />
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/ButtonSorteSpinat"
-                android:src="@drawable/spinat"
-                style="@style/VotingButton" />
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <RatingBar android:id="@+id/RatingBarSpinat" style="@style/RatingBar" />
+                    <ImageButton
+                        android:id="@+id/ButtonSorteReinePute"
+                        android:src="@drawable/reine_pute"
+                        style="@style/VotingButton" />
 
-        </LinearLayout>
+                    <RatingBar android:id="@+id/RatingBarReinePute" style="@style/RatingBar" />
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/ButtonSortePaprikaPerlzwiebel"
-                android:src="@drawable/paprika_perlzwiebel"
-                style="@style/VotingButton" />
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <RatingBar android:id="@+id/RatingBarPaprikaPerlzwiebel" style="@style/RatingBar" />
+                    <ImageButton
+                        android:id="@+id/ButtonSortePikant"
+                        android:src="@drawable/pikant"
+                        style="@style/VotingButton" />
 
-        </LinearLayout>
+                    <RatingBar android:id="@+id/RatingBarPikant" style="@style/RatingBar" />
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/ButtonSorteZwiebel"
-                android:src="@drawable/zwiebel"
-                style="@style/VotingButton" />
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <RatingBar android:id="@+id/RatingBarZwiebel" style="@style/RatingBar" />
+                    <ImageButton
+                        android:id="@+id/ButtonSorteKaese"
+                        android:src="@drawable/kaese"
+                        style="@style/VotingButton" />
 
-        </LinearLayout>
+                    <RatingBar android:id="@+id/RatingBarKaese" style="@style/RatingBar" />
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/ButtonSortePizza"
-                android:src="@drawable/pizza"
-                style="@style/VotingButton" />
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <RatingBar android:id="@+id/RatingBarPizza" style="@style/RatingBar" />
+                    <ImageButton
+                        android:id="@+id/ButtonSortePuteKaese"
+                        android:src="@drawable/pute_kaese"
+                        style="@style/VotingButton" />
 
-        </LinearLayout>
+                    <RatingBar android:id="@+id/RatingBarPuteKaese" style="@style/RatingBar" />
 
-    </LinearLayout>
+                </LinearLayout>
 
-    <Space
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:layout_width="match_parent">
-    </Space>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <ImageButton
-                android:id="@+id/ButtonSorteChiliCheese"
-                android:src="@drawable/chili_cheese"
-                style="@style/VotingButton" />
+                    <ImageButton
+                        android:id="@+id/ButtonSorteTomateMozzarella"
+                        android:src="@drawable/tomate_mozzarella"
+                        style="@style/VotingButton" />
 
-            <RatingBar android:id="@+id/RatingBarChiliCheese" style="@style/RatingBar" />
+                    <RatingBar android:id="@+id/RatingBarTomateMozzarella" style="@style/RatingBar" />
 
-        </LinearLayout>
+                </LinearLayout>
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <ImageButton
-                android:id="@+id/ButtonSorteChili"
-                android:src="@drawable/chili"
-                style="@style/VotingButton" />
+                    <ImageButton
+                        android:id="@+id/ButtonSorteSpinat"
+                        android:src="@drawable/spinat"
+                        style="@style/VotingButton" />
 
-            <RatingBar android:id="@+id/RatingBarChili" style="@style/RatingBar" />
+                    <RatingBar android:id="@+id/RatingBarSpinat" style="@style/RatingBar" />
 
-        </LinearLayout>
+                </LinearLayout>
 
-        <LinearLayout style="@style/ButtonBarContainer">
+                <LinearLayout style="@style/ButtonBarContainer">
 
-            <ImageButton
-                android:id="@+id/ButtonSortePuteChili"
-                android:src="@drawable/pute_chili"
-                style="@style/VotingButton" />
+                    <ImageButton
+                        android:id="@+id/ButtonSortePaprikaPerlzwiebel"
+                        android:src="@drawable/paprika_perlzwiebel"
+                        style="@style/VotingButton" />
 
-            <RatingBar android:id="@+id/RatingBarPuteChili" style="@style/RatingBar" />
+                    <RatingBar android:id="@+id/RatingBarPaprikaPerlzwiebel" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteZwiebel"
+                        android:src="@drawable/zwiebel"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarZwiebel" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSortePizza"
+                        android:src="@drawable/pizza"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarPizza" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteChiliCheese"
+                        android:src="@drawable/chili_cheese"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarChiliCheese" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteChili"
+                        android:src="@drawable/chili"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarChili" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSortePuteChili"
+                        android:src="@drawable/pute_chili"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarPuteChili" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|end"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:background="@drawable/button"
+                        android:id="@+id/zurueckVoting1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12.5dp"
+                        android:layout_marginEnd="-110dp"
+                        android:layout_width="75dp"
+                        android:text="Zurück"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <ImageButton
+                        android:background="@android:color/transparent"
+                        android:id="@+id/weiterGewinnspiel1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-60dp"
+                        android:layout_marginEnd="-100dp"
+                        android:layout_width="425dp"
+                        android:scaleX="0.4"
+                        android:scaleY="0.4"
+                        android:src="@drawable/button_gewinnspiel" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="0.75"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="bottom|end"
-            android:baselineAligned="false">
+            android:layout_width="match_parent"
+            android:orientation="vertical">
 
-            <Button
-                android:background="@drawable/button"
-                android:id="@+id/zurueckVoting"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:text="Zurück"
-                android:textColor="#FFFFFF"
-                android:textSize="15dp" />
-
-            <Button
-                android:background="@drawable/button"
-                android:id="@+id/weiterGewinnspiel"
-                android:gravity="center_vertical"
-                android:layout_height="wrap_content"
+            <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:padding="15dp"
-                android:text="Weiter\nzum Gewinnspiel"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp" />
+                android:layout_height="match_parent">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteFrankfurter"
+                        android:src="@drawable/frankfurter"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarFrankfurter" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteDebreziner"
+                        android:src="@drawable/debreziner"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarDebreziner" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteBratwuerstel"
+                        android:src="@drawable/bratwuerstel"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarBratwuerstel" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteScharfe"
+                        android:src="@drawable/scharfe"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarScharfe" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent">
+            </Space>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteKaesekrainer"
+                        android:src="@drawable/kaesekrainer"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarKaesekrainer" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteSchnuerlKnacker"
+                        android:src="@drawable/schnuerl_knacker"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarSchnuerlKnacker" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteBockwurst"
+                        android:src="@drawable/bockwurst"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarBockwurst" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteBernerWuerstel"
+                        android:src="@drawable/berner_wuerstel"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarBernerWuerstel" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent">
+            </Space>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteChiliCheeseKrainer"
+                        android:src="@drawable/chili_cheese_krainer"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarChiliCheeseKrainer" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.86767"
+                    android:layout_width="match_parent"
+                    />
+
+                <LinearLayout
+                    android:paddingEnd="5dp"
+                    android:layout_weight="0.799"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|end"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:background="@drawable/button"
+                        android:id="@+id/zurueckVoting2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:text="Zurück"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:background="@drawable/button"
+                        android:id="@+id/weiterGewinnspiel2"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:text="Weiter\nzum Gewinnspiel"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteExtra"
+                        android:src="@drawable/extra"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarExtra" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteExtraPikant"
+                        android:src="@drawable/extra_pikant"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarExtraPikant" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteWiener"
+                        android:src="@drawable/wiener"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarWiener" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent">
+            </Space>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteSchwarzwaelder"
+                        android:src="@drawable/schwarzwaelder"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarSchwarzwaelder" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteToastschinken"
+                        android:src="@drawable/toastschinken"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarToastschinken" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ButtonBarContainer">
+
+                    <ImageButton
+                        android:id="@+id/ButtonSorteEdelSchinken"
+                        android:src="@drawable/edel_schinken"
+                        style="@style/VotingButton" />
+
+                    <RatingBar android:id="@+id/RatingBarEdelSchinken" style="@style/RatingBar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent">
+            </Space>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
+                <Space
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    />
+
+                <LinearLayout
+                    android:paddingEnd="5dp"
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|end"
+                    android:baselineAligned="false">
+
+                    <Button
+                        android:background="@drawable/button"
+                        android:id="@+id/zurueckVoting3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:text="Zurück"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:background="@drawable/button"
+                        android:id="@+id/weiterGewinnspiel3"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:padding="15dp"
+                        android:text="Weiter\nzum Gewinnspiel"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ViewFlipper>
 
 </LinearLayout>

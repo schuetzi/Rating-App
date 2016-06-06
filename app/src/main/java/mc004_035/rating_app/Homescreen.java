@@ -37,7 +37,7 @@ public class Homescreen extends Activity {
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_handling);
         imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_handling), Handling.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_herkunft);
-        //imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_herkunft), HerkunftMenu.class, filter));
+        imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_herkunft), HerkunftMenu.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_film);
         imageButton.setOnTouchListener(new CustomListener((ImageButton) findViewById(R.id.homescreen_button_film), Film.class, filter));
         imageButton = (ImageButton) findViewById(R.id.homescreen_button_referenzen);

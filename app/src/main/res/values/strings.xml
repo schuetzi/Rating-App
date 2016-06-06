@@ -148,10 +148,32 @@
         <item>ChiliCheese</item>
         <item>Chili</item>
         <item>PuteChili</item>
+
+        <item>Frankfurter</item>
+        <item>Debreziner</item>
+        <item>Bratwuerstel</item>
+        <item>Scharfe</item>
+        <item>Kaesekrainer</item>
+        <item>SchnuerlKnacker</item>
+        <item>Bockwurst</item>
+        <item>BernerWuerstel</item>
+        <item>ChiliCheeseKrainer</item>
+
+        <item>Extra</item>
+        <item>ExtraPikant</item>
+        <item>Wiener</item>
+        <item>Schwarzwaelder</item>
+        <item>Toastschinken</item>
+        <item>EdelSchinken</item>
     </string-array>
 
     <string name="BeschreibungClassic">
-        Die echte Naturkruste verleiht dem Klassiker\nden herzhaften und feinen Geschmack.
+        Die echte Naturkruste und die flaumigen Lufteinschlüsse verleihen dem Klassiker
+        seinen herzhaften und feinen Geschmack.\r\n\r\n
+        ●  100% Fleisch aus Österreich\r\n
+        ●  ohne künstliche Farbstoffe\r\n
+        ●  ohne Verdickungsmittel\r\n
+        ●  gluten- und laktosefrei
     </string>
     <string name="BeschreibungReinePute">Bla</string>
     <string name="BeschreibungPikant">Bla</string>
@@ -165,4 +187,21 @@
     <string name="BeschreibungChiliCheese">Bla</string>
     <string name="BeschreibungChili">Bla</string>
     <string name="BeschreibungPuteChili">Bla</string>
+
+    <string name="BeschreibungFrankfurter">Bla</string>
+    <string name="BeschreibungDebreziner">Bla</string>
+    <string name="BeschreibungBratwuerstel">Bla</string>
+    <string name="BeschreibungScharfe">Bla</string>
+    <string name="BeschreibungKaesekrainer">Bla</string>
+    <string name="BeschreibungSchnuerlKnacker">Bla</string>
+    <string name="BeschreibungBockwurst">Bla</string>
+    <string name="BeschreibungBernerwuerstel">Bla</string>
+    <string name="BeschreibungChiliCheeseKrainer">Bla</string>
+
+    <string name="BeschreibungExtra">Bla</string>
+    <string name="BeschreibungExtraPikant">Bla</string>
+    <string name="BeschreibungWiener">Bla</string>
+    <string name="BeschreibungSchwarzwaelder">Bla</string>
+    <string name="BeschreibungToastschinken">Bla</string>
+    <string name="BeschreibungEdelSchinken">Bla</string>
 </resources>
