@@ -3,73 +3,73 @@
 
     <string name="handling_zurueck">Zurück</string>
 
-    <string name="herkunft_schweine_bauer1_name">Franz Dietachmair</string>
-    <string name="herkunft_schweine_bauer1_ort">Sattledt</string>
-    <string name="herkunft_schweine_bauer2_name">Familie Edlinger</string>
-    <string name="herkunft_schweine_bauer2_ort">Ried im Traunkreis</string>
-    <string name="herkunft_schweine_bauer3_name">Günther Hubinger</string>
-    <string name="herkunft_schweine_bauer3_ort">Wartberg</string>
-    <string name="herkunft_schweine_bauer4_name">Günther Krennhuber</string>
-    <string name="herkunft_schweine_bauer4_ort">Ried im Traunkreis</string>
-    <string name="herkunft_schweine_bauer5_name">Robert Neubauer</string>
-    <string name="herkunft_schweine_bauer5_ort">Eggendorf</string>
-    <string name="herkunft_schweine_bauer6_name">Familie Pointner</string>
-    <string name="herkunft_schweine_bauer6_ort">Hofkirchen</string>
-    <string name="herkunft_schweine_bauer7_name">Josef Steinmair</string>
-    <string name="herkunft_schweine_bauer7_ort">Kremsmünster</string>
-    <string name="herkunft_schweine_bauer8_name">Georg Steiner</string>
-    <string name="herkunft_schweine_bauer8_ort">Thalheim</string>
+    <string name="herkunft_schweine_bauer1_name">Erwin Jungreithmair</string>
+    <string name="herkunft_schweine_bauer1_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer2_name">Franz Dietachmair</string>
+    <string name="herkunft_schweine_bauer2_ort">Sattledt</string>
+    <string name="herkunft_schweine_bauer3_name">Franz Edlinger</string>
+    <string name="herkunft_schweine_bauer3_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer4_name">Familie Steiner</string>
+    <string name="herkunft_schweine_bauer4_ort">Thalheim der Wels</string>
+    <string name="herkunft_schweine_bauer5_name">Günther Hubinger</string>
+    <string name="herkunft_schweine_bauer5_ort">Wartberg an der Krems</string>
+    <string name="herkunft_schweine_bauer6_name">Familie Krennhuber</string>
+    <string name="herkunft_schweine_bauer6_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer7_name">Familie Auinger</string>
+    <string name="herkunft_schweine_bauer7_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer8_name">Herbert Pointner</string>
+    <string name="herkunft_schweine_bauer8_ort">Hofkirchen an der Trattnach</string>
 
-    <string name="herkunft_schweine_bauer9_name">bauer9_name </string>
-    <string name="herkunft_schweine_bauer9_ort">bauer9_ort</string>
-    <string name="herkunft_schweine_bauer10_name">bauer10_name</string>
-    <string name="herkunft_schweine_bauer10_ort">bauer10_ort</string>
-    <string name="herkunft_schweine_bauer11_name">bauer11_name</string>
-    <string name="herkunft_schweine_bauer11_ort">bauer11_ort</string>
-    <string name="herkunft_schweine_bauer12_name">bauer12_name</string>
-    <string name="herkunft_schweine_bauer12_ort">bauer12_ort</string>
-    <string name="herkunft_schweine_bauer13_name">bauer13_name</string>
-    <string name="herkunft_schweine_bauer13_ort">bauer13_ort</string>
-    <string name="herkunft_schweine_bauer14_name">bauer14_name</string>
-    <string name="herkunft_schweine_bauer14_ort">bauer14_ort</string>
-    <string name="herkunft_schweine_bauer15_name">bauer15_name</string>
-    <string name="herkunft_schweine_bauer15_ort">bauer15_ort</string>
-    <string name="herkunft_schweine_bauer16_name">bauer16_name</string>
-    <string name="herkunft_schweine_bauer16_ort">bauer16_ort</string>
+    <string name="herkunft_schweine_bauer9_name">Johann Brunnmayr</string>
+    <string name="herkunft_schweine_bauer9_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer10_name">Josef Steinmair</string>
+    <string name="herkunft_schweine_bauer10_ort">Kremsmünster</string>
+    <string name="herkunft_schweine_bauer11_name">Familie Auinger</string>
+    <string name="herkunft_schweine_bauer11_ort">Pennewang</string>
+    <string name="herkunft_schweine_bauer12_name">Martin Zwicklhuber</string>
+    <string name="herkunft_schweine_bauer12_ort">Wartberg an der Krems</string>
+    <string name="herkunft_schweine_bauer13_name">Robert Neubauer</string>
+    <string name="herkunft_schweine_bauer13_ort">Eggendorf im Traunkreis</string>
+    <string name="herkunft_schweine_bauer14_name">Christian Felbermair</string>
+    <string name="herkunft_schweine_bauer14_ort">Steinerkirchen an der Traun</string>
+    <string name="herkunft_schweine_bauer15_name">Familie Achleitner</string>
+    <string name="herkunft_schweine_bauer15_ort">Ried im Traunkreis</string>
+    <string name="herkunft_schweine_bauer16_name">Familie Götzenberger</string>
+    <string name="herkunft_schweine_bauer16_ort">Prambachkirchen</string>
 
-    <string name="herkunft_schweine_bauer17_name">bauer17_name</string>
-    <string name="herkunft_schweine_bauer17_ort">bauer17_ort</string>
-    <string name="herkunft_schweine_bauer18_name">bauer18_name</string>
-    <string name="herkunft_schweine_bauer18_ort">bauer18_ort</string>
-    <string name="herkunft_schweine_bauer19_name">bauer19_name</string>
-    <string name="herkunft_schweine_bauer19_ort">bauer19_ort</string>
-    <string name="herkunft_schweine_bauer20_name">bauer20_name</string>
-    <string name="herkunft_schweine_bauer20_ort">bauer20_ort</string>
-    <string name="herkunft_schweine_bauer21_name">bauer21_name</string>
-    <string name="herkunft_schweine_bauer21_ort">bauer21_ort</string>
-    <string name="herkunft_schweine_bauer22_name">bauer22_name</string>
-    <string name="herkunft_schweine_bauer22_ort">bauer22_ort</string>
-    <string name="herkunft_schweine_bauer23_name">bauer23_name</string>
-    <string name="herkunft_schweine_bauer23_ort">bauer23_ort</string>
-    <string name="herkunft_schweine_bauer24_name">bauer24_name</string>
-    <string name="herkunft_schweine_bauer24_ort">bauer24_ort</string>
+    <string name="herkunft_schweine_bauer17_name">Familie Huemer</string>
+    <string name="herkunft_schweine_bauer17_ort">Scharten</string>
+    <string name="herkunft_schweine_bauer18_name">Franz Achleitner</string>
+    <string name="herkunft_schweine_bauer18_ort">Reid im Traunkreis</string>
+    <string name="herkunft_schweine_bauer19_name">Gabriele Brandstötter</string>
+    <string name="herkunft_schweine_bauer19_ort">Peuerbach</string>
+    <string name="herkunft_schweine_bauer20_name">Heinz Huber</string>
+    <string name="herkunft_schweine_bauer20_ort">Steegen</string>
+    <string name="herkunft_schweine_bauer21_name">Helmut Silber</string>
+    <string name="herkunft_schweine_bauer21_ort">St. Georgen bei Grieskirchen</string>
+    <string name="herkunft_schweine_bauer22_name">Irene Zellinger</string>
+    <string name="herkunft_schweine_bauer22_ort">Dorf an der Pram</string>
+    <string name="herkunft_schweine_bauer23_name">Manfred Moser</string>
+    <string name="herkunft_schweine_bauer23_ort">Taufkirchen an der Trattnach</string>
+    <string name="herkunft_schweine_bauer24_name">Markus Lugmair</string>
+    <string name="herkunft_schweine_bauer24_ort">Taufkirchen an der Trattnach</string>
 
-    <string name="herkunft_rinder_bauer1_name">bauer1_name</string>
-    <string name="herkunft_rinder_bauer1_ort">bauer1_ort</string>
-    <string name="herkunft_rinder_bauer2_name">bauer2_name</string>
-    <string name="herkunft_rinder_bauer2_ort">bauer2_ort</string>
-    <string name="herkunft_rinder_bauer3_name">bauer3_name</string>
-    <string name="herkunft_rinder_bauer3_ort">bauer3_ort</string>
-    <string name="herkunft_rinder_bauer4_name">bauer4_name</string>
-    <string name="herkunft_rinder_bauer4_ort">bauer4_ort</string>
-    <string name="herkunft_rinder_bauer5_name">bauer5_name</string>
-    <string name="herkunft_rinder_bauer5_ort">bauer5_ort</string>
-    <string name="herkunft_rinder_bauer6_name">bauer6_name</string>
-    <string name="herkunft_rinder_bauer6_ort">bauer6_ort</string>
-    <string name="herkunft_rinder_bauer7_name">bauer7_name</string>
-    <string name="herkunft_rinder_bauer7_ort">bauer7_ort</string>
-    <string name="herkunft_rinder_bauer8_name">bauer8_name</string>
-    <string name="herkunft_rinder_bauer8_ort">bauer8_ort</string>
+    <string name="herkunft_rinder_bauer1_name">Anton Fuchs</string>
+    <string name="herkunft_rinder_bauer1_ort">Esternberg</string>
+    <string name="herkunft_rinder_bauer2_name">Familie Bergthaller</string>
+    <string name="herkunft_rinder_bauer2_ort">Oberweis</string>
+    <string name="herkunft_rinder_bauer3_name">Familie Bindreiter</string>
+    <string name="herkunft_rinder_bauer3_ort">Stroheim</string>
+    <string name="herkunft_rinder_bauer4_name">Familie Heitzinger</string>
+    <string name="herkunft_rinder_bauer4_ort">Bad Wimsbach-Neydharting</string>
+    <string name="herkunft_rinder_bauer5_name">Familie Huemer</string>
+    <string name="herkunft_rinder_bauer5_ort">Atzbach</string>
+    <string name="herkunft_rinder_bauer6_name">Familie Kaser</string>
+    <string name="herkunft_rinder_bauer6_ort">Meggenhofen</string>
+    <string name="herkunft_rinder_bauer7_name">Familie Lesslhumer</string>
+    <string name="herkunft_rinder_bauer7_ort">Michaelnbach</string>
+    <string name="herkunft_rinder_bauer8_name">Familie Stockhammer</string>
+    <string name="herkunft_rinder_bauer8_ort">Perwang am Grabensee</string>
 
     <string name="herkunft_rinder_bauer9_name">bauer9_name </string>
     <string name="herkunft_rinder_bauer9_ort">bauer9_ort</string>
@@ -118,6 +118,7 @@
     <string name="herkunft_rinder_bauer30_name">bauer30_name</string>
     <string name="herkunft_rinder_bauer30_ort">bauer30_ort</string>
 
+
     <string name="qualitaet_ohne_Gen_titel">100% gentechnikfrei</string>
     <string name="qualitaet_ohne_Gen_text">Die Bauern unseres Vertrauens verwenden ausschließlich\ngentechnikfreie Futtermittel.</string>
     <string name="qualitaet_ama_titel">AMA Gütesiegel</string>
@@ -127,12 +128,48 @@
     <string name="ohneVerdTitel">ohne Verdickungsmittel</string>
     <string name="ohneVerdText">In unserer gesamten Produktpalette sind keine Verdickungsmittel\nenthalten!</string>
 
-    <string name="handling_var1_titel">Variante 1: Leberkäseofen</string>
-    <string name="handling_var1_text"><ol><li>first\n</li><li>second\n</li></ol></string>
-    <string name="handling_var2_titel">Variante 2: Plattengrill</string>
-    <string name="handling_var2_text"><ol><li>first\n</li><li>second\n</li></ol></string>
-    <string name="handling_var3_titel">Variante 3: HSG</string>
-    <string name="handling_var3_text"><ol><li>first\n</li><li>second\n</li></ol></string>
+    <string name="referenzen_titel_1">Aral Tankstelle</string>
+    <string name="referenzen_text_1">Günter Kruse, München, Deutschland</string>
+    <string name="referenzen_titel_2">BP Tankstelle</string>
+    <string name="referenzen_text_2">Hermann Hörandner, Grieskirchen, Österreich</string>
+    <string name="referenzen_titel_3">Eni Servicestation</string>
+    <string name="referenzen_text_3">Thomas Echter, Kempten, Deutschland</string>
+    <string name="referenzen_titel_4">HEM Tankstelle</string>
+    <string name="referenzen_text_4">Margit Wilke, Eicklingen, Deutschland</string>
+    <string name="referenzen_titel_5">IQ Autohof</string>
+    <string name="referenzen_text_5">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+    <string name="referenzen_titel_6">IQ Autohof</string>
+    <string name="referenzen_text_6">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+    <string name="referenzen_titel_7">IQ Autohof</string>
+    <string name="referenzen_text_7">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+    <string name="referenzen_titel_8">IQ Autohof</string>
+    <string name="referenzen_text_8">Fritz Kindlmann, Haag am Hausruck, Österreich</string>
+    <string name="referenzen_titel_9">OMV VIVA</string>
+    <string name="referenzen_text_9">Herbert Müller, Wels, Österreich</string>
+    <string name="referenzen_titel_10">Shell Tankstelle</string>
+    <string name="referenzen_text_10">Walter Cernkovic, St. Pankraz, Österreich</string>
+    <string name="referenzen_titel_11">Shell Tankstelle</string>
+    <string name="referenzen_text_11">Walter Cernkovic, St. Pankraz, Österreich</string>
+    <string name="referenzen_titel_12">Turmöl Tankstelle</string>
+    <string name="referenzen_text_12">Walter Mazzulini, Brunn am Gebirge, Österreich</string>
+
+    <string name="qualitaet_text1">Als erstes Unternehmen unserer Branche stellen wir unser gesamtes Sortiment zu 100 % gentechnikfrei her. Vom Feld bis auf den Teller wird die Gentechnikfreiheit mit Überzeugung gelebt und von der agroVet GmbH streng kontrolliert.</string>
+    <string name="qualitaet_text2">Für unsere gourmetfeinen Produkte verarbeiten wir nur hochwertiges Fleisch das zu 100 % aus Österreich kommt! Die Einhaltung der AMA Richtlinien werden regelmäßig streng kontrolliert.</string>
+    <string name="qualitaet_text3">Unsere gschmackigen Produkte von gourmetfein brauchen keine künstliche Farbkorrektur! Wir verwenden nur natürliche Farbstoffe, wie zum Beispiel Paprika, zur Färbung der Produkte.</string>
+    <string name="qualitaet_text4">Verdickungsmittel sind Lebensmittelzusatzstoffe, die Produkten eine gewünschte Konsistenz verleihen. Auf diese Schummelstoffe können wir von gourmetfein mit gutem Gewissen verzichten.</string>
+    <string name="qualitaet_text5">Wir bei gourmetfein müssen nicht mit Bindemitteln, wie z.B. Kartoffelstärke nachhelfen, denn in unsere Produkte kommt nur Frischfleisch in ganzen Teilstücken. So können auch Menschen mit Glutenunverträglichkeit unsere Produkte sorglos genießen.</string>
+    <string name="qualitaet_text6">Der Unterschied bei den verwendeten Rohstoffen!</string>
+    <string name="qualitaet_text7">Der Unterschied in der Zubereitung!</string>
+    <string name="qualitaet_text8">Der Unterschied beim Backvorgang!</string>
+
+    <string name="qualitaet_titel1">OGT</string>
+    <string name="qualitaet_titel2">AMA</string>
+    <string name="qualitaet_titel3">Ohne künstliche Farbstoffe</string>
+    <string name="qualitaet_titel4">Ohne Verdickungsmittel</string>
+    <string name="qualitaet_titel5">Glutenfrei</string>
+    <string name="qualitaet_titel6">Rohstoff</string>
+    <string name="qualitaet_titel7">Zubereitung</string>
+    <string name="qualitaet_titel8">Backvorgang</string>
 
     <string-array name="sorten">
         <item>Classic</item>
@@ -168,12 +205,7 @@
     </string-array>
 
     <string name="BeschreibungClassic">
-        Die echte Naturkruste und die flaumigen Lufteinschlüsse verleihen dem Klassiker
-        seinen herzhaften und feinen Geschmack.\r\n\r\n
-        ●  100% Fleisch aus Österreich\r\n
-        ●  ohne künstliche Farbstoffe\r\n
-        ●  ohne Verdickungsmittel\r\n
-        ●  gluten- und laktosefrei
+        Die echte Naturkruste verleiht dem Klassiker\nden herzhaften und feinen Geschmack.
     </string>
     <string name="BeschreibungReinePute">Bla</string>
     <string name="BeschreibungPikant">Bla</string>

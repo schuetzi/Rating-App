@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background_landscape"
     android:orientation="horizontal"
     android:weightSum="1">
 
@@ -10,7 +10,8 @@
     <ViewFlipper
         android:id="@+id/herkunft_schweine_view_flipper"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,31 +19,37 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:gravity="left|bottom|end"
                 android:orientation="vertical">
 
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="904dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1">
 
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="90dp">
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal">
 
                         <TextView
@@ -54,7 +61,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -68,7 +76,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -81,6 +90,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -91,7 +102,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -99,6 +110,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -110,6 +123,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -123,6 +138,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -135,6 +152,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -154,53 +173,61 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer1_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer1_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_1" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer2_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer2_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer2" />
+                            android:src="@drawable/schweine_bauer_2" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer3_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer3_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer3" />
+                            android:src="@drawable/schweine_bauer_3" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer4_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer4_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer4" />
+                            android:src="@drawable/schweine_bauer_4" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -208,6 +235,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -219,6 +248,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -232,6 +263,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -244,6 +277,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -254,7 +289,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -262,6 +297,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -273,6 +310,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -286,6 +325,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -298,6 +339,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -312,54 +355,62 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="10dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer5_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer5_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer5" />
+                            android:src="@drawable/schweine_bauer_5" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:touchscreenBlocksFocus="true">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer6_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer6_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer6" />
+                            android:src="@drawable/schweine_bauer_6" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer7_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer7_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer7" />
+                            android:src="@drawable/schweine_bauer_7" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer8_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer8_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer8" />
+                            android:src="@drawable/schweine_bauer_8" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -423,6 +474,17 @@
                             android:id="@+id/herkunft_schweine_first_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_fourth_page_third_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:maxHeight="15dp"
                             android:maxWidth="15dp"
@@ -434,9 +496,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
 
@@ -469,8 +532,9 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:gravity="left|center|center_horizontal"
                 android:orientation="vertical">
 
@@ -497,23 +561,28 @@
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="904dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1">
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="90dp">
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal">
 
                         <TextView
@@ -525,7 +594,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -539,7 +609,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -552,6 +623,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -562,7 +635,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -570,6 +643,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -581,6 +656,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -594,6 +671,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -606,6 +685,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -625,57 +706,61 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer9_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer9_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_9" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer10_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer10_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_10" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer11_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer11_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_11" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer12_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer12_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_12" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -683,6 +768,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -694,6 +781,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -707,6 +796,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -719,6 +810,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -729,7 +822,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -737,6 +830,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -748,6 +843,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -761,6 +858,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -773,6 +872,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -787,62 +888,62 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="10dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer13_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer13_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_13" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:touchscreenBlocksFocus="true">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer14_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer14_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_14" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer15_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer15_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_15" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer16_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer16_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_16" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -906,6 +1007,17 @@
                             android:id="@+id/herkunft_schweine_sec_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_sec_page_fourth_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:maxHeight="15dp"
                             android:maxWidth="15dp"
@@ -916,9 +1028,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
 
@@ -949,9 +1062,10 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
+                android:layout_weight="1"
                 android:gravity="left|center|center_horizontal"
                 android:orientation="vertical">
 
@@ -978,23 +1092,28 @@
             </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="904dp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:weightSum="1">
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="90dp">
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1006,7 +1125,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -1020,7 +1140,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -1033,6 +1154,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1043,7 +1166,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -1051,6 +1174,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1062,6 +1187,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -1075,6 +1202,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -1087,6 +1216,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1106,61 +1237,63 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer17_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer17_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_17" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer18_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer18_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_18" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer19_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer19_pic"
                             style="@style/herkunft_bauern_pic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_19" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer20_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer20_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_20" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -1168,6 +1301,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1179,6 +1314,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -1192,6 +1329,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -1204,6 +1343,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1214,7 +1355,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -1222,6 +1363,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1233,6 +1376,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
@@ -1246,6 +1391,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
@@ -1258,6 +1405,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1272,62 +1421,62 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="10dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer21_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer21_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_21" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:touchscreenBlocksFocus="true">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer22_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer22_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_22" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingRight="10dp">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer23_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer23_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_23" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal">
 
-                        <ImageButton
-                            android:id="@+id/herkunft_schweine_bauer24_button"
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_bauer24_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/schweine_bauer_24" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1391,24 +1540,557 @@
                             android:id="@+id/herkunft_schweine_third_page_third_bullet"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
                             android:adjustViewBounds="true"
                             android:maxHeight="15dp"
                             android:maxWidth="15dp"
                             android:scaleType="fitCenter"
                             android:src="@drawable/bullethole" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_schweine_third_page_fourth_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/herkunft_schweine_third_page_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:maxHeight="90dp"
+                    android:maxWidth="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/next" />
 
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center|end|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/herkunft_rinder_first_page_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:maxHeight="90dp"
+                    android:maxWidth="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/back" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer1_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer1_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer2_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer2_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer3_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer3_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer4_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer4_name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer1_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer1_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer2_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer2_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer3_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer3_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer4_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer4_ort" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer1_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer2_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer3_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer4_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer5_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer5_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer6_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer6_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer7_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer7_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer8_name"
+                            style="@style/herkunft_bauern_name"
+                            android:text="@string/herkunft_rinder_bauer8_name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer5_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer5_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer6_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer6_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer7_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer7_ort" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/herkunft_rinder_bauer8_ort"
+                            style="@style/herkunft_bauern_ort"
+                            android:text="@string/herkunft_rinder_bauer8_ort" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer5_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:touchscreenBlocksFocus="true">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer6_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer7_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_bauer8_pic"
+                            style="@style/herkunft_bauern_pic"
+                            android:src="@drawable/rinder_bauer_8" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left|center_horizontal"
+                        android:gravity="left|bottom"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/herkunft_rinder_first_page_button_zurueck"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:shadowColor="#A8A8A8"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="5"
+                            android:text="@string/handling_zurueck"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingRight="100dp">
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_first_page_first_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_first_page_sec_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_first_page_third_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="7dp"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullet" />
+
+                        <ImageView
+                            android:id="@+id/herkunft_rinder_first_page_fourth_bullet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:maxHeight="15dp"
+                            android:maxWidth="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bullethole" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_horizontal"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </ViewFlipper>
 </LinearLayout>

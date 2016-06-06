@@ -2,6 +2,7 @@ package mc004_035.rating_app;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -39,6 +40,11 @@ public class Handling extends Carousel implements View.OnClickListener {
         button.setOnClickListener(this);
         button = (Button) findViewById(R.id.handling_var3_zurueck);
         button.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent touch) {
+        return super.onTouchEvent(viewFlipper, touch);
     }
 
     @Override
