@@ -23,9 +23,7 @@
         <activity android:name=".Handling" />
         <activity android:name=".Film" />
         <activity android:name=".Referenzen" />
-        <activity android:name=".HerkunftMenu" />
-        <activity android:name=".HerkunftSchwein" />
-        <activity android:name=".HerkunftRind" />
+        <activity android:name=".Herkunft" />
     </application>
 
 </manifest>
