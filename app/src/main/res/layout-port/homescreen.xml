@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginEnd="25dp"
             android:gravity="center|right">
 
             <ImageButton
@@ -29,7 +30,6 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
             android:layout_weight="1"
             android:gravity="left|center">
 
@@ -52,7 +52,7 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
+            android:layout_marginEnd="25dp"
             android:layout_weight="1"
             android:gravity="center|right">
 
@@ -72,8 +72,7 @@
             <ImageButton
                 style="@style/homescreen_button"
                 android:id="@+id/homescreen_button_herkunft"
-                android:src="@drawable/herkunft"
-                android:paddingLeft="5dp" />
+                android:src="@drawable/herkunft" />
         </LinearLayout>
 
     </LinearLayout>
@@ -89,6 +88,7 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
             android:gravity="center|right"
             android:layout_weight="1">
 

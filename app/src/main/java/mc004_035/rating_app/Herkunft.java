@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,14 +37,14 @@ public class Herkunft extends Carousel implements View.OnClickListener {
         imageView.setOnClickListener(this);
 
 
-        Button button = null;
-        button = (Button) findViewById(R.id.herkunft_schweine_first_page_button_zurueck);
+        ImageButton button = null;
+        button = (ImageButton) findViewById(R.id.herkunft_schweine_first_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.herkunft_schweine_sec_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.herkunft_schweine_sec_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.herkunft_schweine_third_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.herkunft_schweine_third_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.herkunft_rinder_first_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.herkunft_rinder_first_page_button_zurueck);
         button.setOnClickListener(this);
     }
 

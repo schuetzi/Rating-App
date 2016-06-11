@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -32,13 +32,13 @@ public class Handling extends Carousel implements View.OnClickListener {
         imageView = (ImageView) findViewById(R.id.handling_var3_back);
         imageView.setOnClickListener(this);
 
-        Button button = null;
+        ImageButton button = null;
 
-        button = (Button) findViewById(R.id.handling_var1_zurueck);
+        button = (ImageButton) findViewById(R.id.handling_var1_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.handling_var2_zurueck);
+        button = (ImageButton) findViewById(R.id.handling_var2_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.handling_var3_zurueck);
+        button = (ImageButton) findViewById(R.id.handling_var3_zurueck);
         button.setOnClickListener(this);
     }
 

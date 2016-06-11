@@ -6,11 +6,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.ViewFlipper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class Voting extends Activity implements View.OnClickListener {
@@ -162,7 +166,71 @@ public class Voting extends Activity implements View.OnClickListener {
         if (id == R.id.zurueckVoting1 || id == R.id.zurueckVoting2 || id == R.id.zurueckVoting3) {
             onBackPressed();
         } else {
-            // startActivity(new Intent(this, VotingSubmit.class));}
+            boolean any_bew_leb = false, any_bew_wue = false, any_bew_wur = false;
+            int[] bew_leberkaese = new int[13], bew_wuerstel = new int[9], bew_wurst = new int[6];
+            ArrayList[] keys_leberkaese = new ArrayList[5];
+            ArrayList[] keys_wuerstel = new ArrayList[5];
+            ArrayList[] keys_wurst = new ArrayList[5];
+            for (int i = 0; i < 5; ++i) {
+                keys_leberkaese[i] = new ArrayList();
+                keys_wuerstel[i] = new ArrayList();
+                keys_wurst[i] = new ArrayList();
+            }
+            Resources resources = getResources();
+            String[] sorten = resources.getStringArray(R.array.sorten);
+            for (int i = 0; i < sorten.length; ++i) {
+                RatingBar bar = (RatingBar) findViewById(
+                        resources.getIdentifier("RatingBar" + sorten[i], "id", getPackageName())
+                );
+                int rating = (int) bar.getRating();
+                if (i < 13) {
+                    bew_leberkaese[i] = rating;
+                    any_bew_leb = true;
+                } else if (i < 22) {
+                    bew_wuerstel[i - 13] = rating;
+                    any_bew_wue = true;
+                } else {
+                    bew_wurst[i - 22] = rating;
+                    any_bew_wur = true;
+                }
+            }
+            Log.e("bla", Arrays.toString(bew_leberkaese));
+            Log.e("bla", Arrays.toString(bew_wuerstel));
+            Log.e("bla", Arrays.toString(bew_wurst));
+
+            /*if (any_bew_leb)
+                for (int i = 0; i < bew_leberkaese.length; ++i)
+                    if (bew_leberkaese[i] != 0)
+                        keys_leberkaese[bew_leberkaese[i] - 1].add(i);
+            if (any_bew_wue)
+                for (int i = 0; i < bew_wuerstel.length; ++i)
+                    if (bew_wuerstel[i] != 0)
+                        keys_wuerstel[bew_wuerstel[i] - 1].add(i);
+            if (any_bew_wur)
+                for (int i = 0; i < bew_wurst.length; ++i)
+                    if (bew_wurst[i] != 0)
+                        keys_wurst[bew_wurst[i] - 1].add(i);
+            Intent intent = new Intent(this, VotingSubmit.class);
+            intent.putExtra("keys_leberkaese_1", keys_leberkaese[0]);
+            intent.putExtra("keys_leberkaese_2", keys_leberkaese[1]);
+            intent.putExtra("keys_leberkaese_3", keys_leberkaese[2]);
+            intent.putExtra("keys_leberkaese_4", keys_leberkaese[3]);
+            intent.putExtra("keys_leberkaese_5", keys_leberkaese[4]);
+            intent.putExtra("keys_wuerstel_1", keys_wuerstel[0]);
+            intent.putExtra("keys_wuerstel_2", keys_wuerstel[1]);
+            intent.putExtra("keys_wuerstel_3", keys_wuerstel[2]);
+            intent.putExtra("keys_wuerstel_4", keys_wuerstel[3]);
+            intent.putExtra("keys_wuerstel_5", keys_wuerstel[4]);
+            intent.putExtra("keys_wurst_1", keys_wurst[0]);
+            intent.putExtra("keys_wurst_2", keys_wurst[1]);
+            intent.putExtra("keys_wurst_3", keys_wurst[2]);
+            intent.putExtra("keys_wurst_4", keys_wurst[3]);
+            intent.putExtra("keys_wurst_5", keys_wurst[4]);*/
+            Intent intent = new Intent(this, VotingSubmit.class);
+            intent.putExtra("bew_leberkaese", bew_leberkaese);
+            intent.putExtra("bew_wuerstel", bew_wuerstel);
+            intent.putExtra("bew_wurst", bew_wurst);
+            startActivity(intent);
         }
     }
 

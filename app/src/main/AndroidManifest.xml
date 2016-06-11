@@ -18,12 +18,14 @@
         </activity>
         <activity android:name=".Voting" />
         <activity android:name=".VotingDetail" />
-        <!-- <activity android:name=".VotingSubmit" /> -->
+        <activity android:name=".VotingSubmit" />
         <activity android:name=".Qualitaet" />
         <activity android:name=".Handling" />
         <activity android:name=".Film" />
         <activity android:name=".Referenzen" />
         <activity android:name=".Herkunft" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

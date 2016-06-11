@@ -46,7 +46,7 @@ public class Homescreen extends Activity {
 
     public class CustomListener implements View.OnTouchListener {
 
-        final int buttonWidth = 220, buttonHeight = 220;
+        final int btnSizeLandscape = 205, btnSizePortrait = 222;
 
         final ImageButton button;
         final Class CLASS;
@@ -58,12 +58,14 @@ public class Homescreen extends Activity {
             this.CLASS = CLASS;
             this.filter = filter;
 
+            int buttonSize = getResources().getConfiguration().orientation == 2 ? btnSizeLandscape : btnSizePortrait;
+
             matrix = new Matrix();
             Drawable buttonDrawable = button.getDrawable();
-            float scaleXFactor = buttonWidth / (float) buttonDrawable.getIntrinsicWidth() * 0.975f,
-                    scaleYFactor = buttonHeight / (float) buttonDrawable.getIntrinsicHeight() * 0.975f,
-                    upperLeftX = buttonWidth * (1 - 0.975f) / 2.f,
-                    upperLeftY = buttonHeight * (1 - 0.975f) / 2.f;
+            float scaleXFactor = buttonSize / (float) buttonDrawable.getIntrinsicWidth() * 0.975f,
+                    scaleYFactor = buttonSize / (float) buttonDrawable.getIntrinsicHeight() * 0.975f,
+                    upperLeftX = buttonSize * (1 - 0.975f) / 2.f,
+                    upperLeftY = buttonSize * (1 - 0.975f) / 2.f;
             matrix.setScale(scaleXFactor, scaleYFactor, upperLeftX, upperLeftY);
         }
 

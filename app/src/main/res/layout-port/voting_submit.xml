@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_portrait"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
+    android:paddingTop="150dp">
+
+    <WebView
+        android:background="@drawable/bg_webview"
+        android:id="@+id/teilnbed_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/zurueckWebView"
+        android:layout_gravity="bottom|right"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="126dp"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/zurueckWebViewButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_zurueck_invertiert" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_width="wrap_content">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:hint="E-Mail (verpflichtend)"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="Firma"
+                    android:id="@+id/firma"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="Vorname"
+                    android:id="@+id/vorname"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="Nachname"
+                    android:id="@+id/nachname"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton android:id="@+id/maennlich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="männlich" />
+
+                    <RadioButton android:id="@+id/weiblich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="weiblich" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:hint="Straße/Hausnummer"
+                    android:id="@+id/strasse"
+                    android:inputType="textPostalAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="PLZ/Ort"
+                    android:id="@+id/ort"
+                    android:inputType="textPostalAddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="Land"
+                    android:id="@+id/land"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:hint="Telefonnummer"
+                    android:id="@+id/nummer"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:id="@+id/teilnbed"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="@string/teilnbed" />
+
+        <CheckBox
+            android:id="@+id/gelesen"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="Ich habe die Teilnahmebedingungen gelesen und akzeptiere sie."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <LinearLayout
+                android:layout_marginEnd="15dp"
+                android:layout_width="101dp"
+                android:layout_height="40dp">
+
+                <ImageButton
+                    android:id="@+id/zurueckAbsenden"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_zurueck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="185dp"
+                android:layout_height="40dp">
+
+                <ImageButton
+                    android:id="@+id/absenden"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/button_absenden" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

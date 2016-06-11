@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/background_landscape"
-    android:paddingBottom="15dp"
-    android:paddingEnd="12dp"
-    android:paddingStart="0dp"
-    android:paddingTop="105dp"
+    android:background="@drawable/background_portrait"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="105dp">
 
     <LinearLayout
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
         android:layout_weight="1"
-        android:layout_width="0dp"
-        android:orientation="vertical">
+        android:layout_width="wrap_content">
 
         <ImageButton
             android:background="@drawable/leberkaese"
             android:id="@+id/ButtonLeberkaese"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_width="wrap_content" />
-
-        <Space
-            android:layout_height="10dp"
-            android:layout_width="1dp" />
+            android:layout_width="0dp" />
 
         <ImageButton
             android:background="@drawable/wuerstel"
             android:id="@+id/ButtonWuerstel"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_width="wrap_content" />
-
-        <Space
-            android:layout_height="10dp"
-            android:layout_width="1dp" />
+            android:layout_width="0dp" />
 
         <ImageButton
             android:background="@drawable/wurst"
             android:id="@+id/ButtonWurst"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_width="wrap_content" />
+            android:layout_width="0dp" />
 
     </LinearLayout>
 
     <ViewFlipper
         android:id="@+id/VotingFlipper"
-        android:layout_height="wrap_content"
-        android:layout_weight="3.5"
-        android:layout_width="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_width="wrap_content">
 
         <LinearLayout
             android:layout_height="match_parent"
@@ -95,6 +88,13 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -117,13 +117,6 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content">
-
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -134,6 +127,13 @@
                     <RatingBar android:id="@+id/RatingBarTomateMozzarella" style="@style/RatingBar" />
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
 
                 <LinearLayout style="@style/ButtonBarContainer">
 
@@ -168,6 +168,13 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -178,13 +185,6 @@
                     <RatingBar android:id="@+id/RatingBarPizza" style="@style/RatingBar" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_width="wrap_content">
 
                 <LinearLayout style="@style/ButtonBarContainer">
 
@@ -208,6 +208,13 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content">
+
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -218,6 +225,10 @@
                     <RatingBar android:id="@+id/RatingBarPuteChili" style="@style/RatingBar" />
 
                 </LinearLayout>
+
+                <Space
+                    android:layout_height="wrap_content"
+                    android:layout_width="63dp" />
 
                 <LinearLayout
                     android:layout_gravity="bottom"
@@ -303,6 +314,13 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -313,19 +331,6 @@
                     <RatingBar android:id="@+id/RatingBarScharfe" style="@style/RatingBar" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <Space
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:layout_width="match_parent">
-            </Space>
-
-            <LinearLayout
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_width="match_parent">
 
                 <LinearLayout style="@style/ButtonBarContainer">
 
@@ -349,6 +354,13 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
+
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -371,19 +383,6 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
-
-            <Space
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:layout_width="match_parent">
-            </Space>
-
-            <LinearLayout
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_width="match_parent">
-
                 <LinearLayout style="@style/ButtonBarContainer">
 
                     <ImageButton
@@ -395,14 +394,19 @@
 
                 </LinearLayout>
 
-                <Space
-                    android:layout_height="wrap_content"
-                    android:layout_width="285dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent">
 
                 <LinearLayout
+                    android:gravity="right"
                     android:layout_gravity="bottom"
                     android:layout_height="wrap_content"
-                    android:layout_width="310dp">
+                    android:layout_marginEnd="12dp"
+                    android:layout_width="match_parent">
 
                     <LinearLayout
                         android:layout_gravity="bottom"
@@ -446,7 +450,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="1.2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -484,12 +488,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-            <Space
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:layout_width="match_parent">
-            </Space>
 
             <LinearLayout
                 android:layout_height="match_parent"
@@ -530,12 +528,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-            <Space
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:layout_width="match_parent">
-            </Space>
 
             <LinearLayout
                 android:layout_height="match_parent"

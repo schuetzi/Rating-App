@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_portrait"
     android:orientation="horizontal"
+    android:paddingTop="80dp"
     android:weightSum="1">
 
 
@@ -434,24 +435,20 @@
                     android:paddingTop="20dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="left|center_horizontal"
-                        android:gravity="left"
-                        android:orientation="horizontal">
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/herkunft_schweine_first_page_button_zurueck"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/button"
-                            android:shadowColor="#A8A8A8"
-                            android:shadowDx="0"
-                            android:shadowDy="0"
-                            android:shadowRadius="5"
-                            android:text="@string/handling_zurueck"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck"
+                            android:background="@android:color/transparent" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -987,24 +984,20 @@
                     android:paddingTop="20dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="left|center_horizontal"
-                        android:gravity="left"
-                        android:orientation="horizontal">
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/herkunft_schweine_sec_page_button_zurueck"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/button"
-                            android:shadowColor="#A8A8A8"
-                            android:shadowDx="0"
-                            android:shadowDy="0"
-                            android:shadowRadius="5"
-                            android:text="@string/handling_zurueck"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck"
+                            android:background="@android:color/transparent" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1531,24 +1524,20 @@
                     android:paddingTop="20dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="left|center_horizontal"
-                        android:gravity="left"
-                        android:orientation="horizontal">
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/herkunft_schweine_third_page_button_zurueck"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/button"
-                            android:shadowColor="#A8A8A8"
-                            android:shadowDx="0"
-                            android:shadowDy="0"
-                            android:shadowRadius="5"
-                            android:text="@string/handling_zurueck"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck"
+                            android:background="@android:color/transparent" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1743,7 +1732,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer1_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_1" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1756,7 +1745,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer2_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_2" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1840,7 +1829,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer3_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_3" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1853,7 +1842,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer4_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_4" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -1937,7 +1926,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer5_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_5" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -1951,7 +1940,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer6_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_6" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -2034,7 +2023,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer7_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_7" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -2047,7 +2036,7 @@
                         <ImageView
                             android:id="@+id/herkunft_rinder_bauer8_pic"
                             style="@style/herkunft_bauern_pic"
-                            android:src="@drawable/schweine_bauer1" />
+                            android:src="@drawable/rinder_bauer_8" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -2059,29 +2048,25 @@
                     android:paddingTop="20dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="left|center_horizontal"
-                        android:gravity="left|bottom"
-                        android:orientation="horizontal">
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp">
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/herkunft_rinder_first_page_button_zurueck"
-                            android:layout_width="100dp"
-                            android:layout_height="40dp"
-                            android:background="@drawable/button"
-                            android:shadowColor="#A8A8A8"
-                            android:shadowDx="0"
-                            android:shadowDy="0"
-                            android:shadowRadius="5"
-                            android:text="@string/handling_zurueck"
-                            android:textColor="#FFFFFF"
-                            android:textSize="20sp" />
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck"
+                            android:background="@android:color/transparent" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center|center_horizontal"
                         android:orientation="horizontal"
                         android:paddingRight="100dp">

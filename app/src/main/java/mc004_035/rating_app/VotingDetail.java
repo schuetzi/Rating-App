@@ -53,4 +53,9 @@ public class VotingDetail extends Activity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        findViewById(R.id.fertigVoting).performClick();
+    }
+
 }

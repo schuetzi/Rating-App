@@ -22,29 +22,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="left|bottom|end"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:gravity="bottom"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_first_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_first_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -63,7 +64,7 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:maxHeight="300dp"
-                    android:maxWidth="500dp"
+                    android:maxWidth="600dp"
                     android:paddingTop="20dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/referenzen_1"
@@ -73,7 +74,7 @@
                     android:id="@+id/referenzen_first_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_1"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -84,7 +85,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_1"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -127,24 +128,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_sec_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -154,26 +150,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_sec_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_sec_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -202,7 +197,7 @@
                     android:id="@+id/referenzen_sec_page_sec_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_2"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -213,7 +208,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_2"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -254,24 +249,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_third_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -281,26 +271,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_third_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_third_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -329,7 +318,7 @@
                     android:id="@+id/referenzen_third_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_3"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -340,7 +329,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_3"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -381,24 +370,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_fourth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -408,26 +392,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_fourth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_fourth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -456,7 +439,7 @@
                     android:id="@+id/referenzen_fourth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_4"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -467,7 +450,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_4"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -508,24 +491,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_fifth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -535,26 +513,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_fifth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_fifth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -583,7 +560,7 @@
                     android:id="@+id/referenzen_fifth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_5"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -594,7 +571,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_5"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -635,24 +612,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_sixth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -662,26 +634,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_sixth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_sixth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -710,7 +681,7 @@
                     android:id="@+id/referenzen_sixth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_6"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -721,7 +692,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_6"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -762,24 +733,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_seventh_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -789,26 +755,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_seventh_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_seventh_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -837,7 +802,7 @@
                     android:id="@+id/referenzen_seventh_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_7"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -848,7 +813,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_7"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -889,24 +854,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_eighth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -916,26 +876,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_eighth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_eighth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -964,7 +923,7 @@
                     android:id="@+id/referenzen_eighth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_8"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -975,7 +934,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_8"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -1016,24 +975,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_ninth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -1043,26 +997,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_ninth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_ninth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -1091,7 +1044,7 @@
                     android:id="@+id/referenzen_ninth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_9"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -1102,7 +1055,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_9"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -1143,24 +1096,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_tenth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -1170,26 +1118,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_tenth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_tenth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -1218,7 +1165,7 @@
                     android:id="@+id/referenzen_tenth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_10"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -1229,7 +1176,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_10"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -1270,24 +1217,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_eleventh_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -1297,26 +1239,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_eleventh_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_eleventh_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -1345,7 +1286,7 @@
                     android:id="@+id/referenzen_eleventh_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_11"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -1356,7 +1297,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/referenzen_text_11"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:paddingBottom="2dp" />
+                    android:paddingBottom="10dp" />
 
             </LinearLayout>
 
@@ -1397,24 +1338,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:gravity="left|bottom|center|center_horizontal"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_horizontal"
-                    android:gravity="center|center_horizontal"
-                    android:orientation="vertical"
-                    android:paddingTop="235dp">
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content" >
 
                     <ImageView
                         android:id="@+id/referenzen_twelfth_page_back"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"
                         android:maxHeight="90dp"
@@ -1424,26 +1360,25 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left|center_horizontal"
                     android:gravity="bottom"
-                    android:orientation="vertical"
-                    android:paddingBottom="20dp"
-                    android:paddingLeft="20dp">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content" >
 
-                    <Button
-                        android:id="@+id/referenzen_twelfth_page_button_zurueck"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/button"
-                        android:shadowColor="#A8A8A8"
-                        android:shadowDx="0"
-                        android:shadowDy="0"
-                        android:shadowRadius="5"
-                        android:text="@string/handling_zurueck"
-                        android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="126dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp" >
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/referenzen_twelfth_page_button_zurueck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/button_zurueck" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -1472,7 +1407,7 @@
                     android:id="@+id/referenzen_twelfth_page_pic_titel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="5dp"
+                    android:paddingTop="10dp"
                     android:text="@string/referenzen_titel_12"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -1481,6 +1416,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
                     android:text="@string/referenzen_text_12"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 

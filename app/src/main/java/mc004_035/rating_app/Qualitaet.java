@@ -1,11 +1,10 @@
 package mc004_035.rating_app;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -52,23 +51,23 @@ public class Qualitaet extends Carousel implements View.OnClickListener {
         imageView = (ImageView) findViewById(R.id.qualitaet_eighth_page_back);
         imageView.setOnClickListener(this);
 
-        Button button = null;
+        ImageButton button = null;
 
-        button = (Button) findViewById(R.id.qualitaet_first_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_first_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_sec_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_sec_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_third_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_third_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_fourth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_fourth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_fifth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_fifth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_sixth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_sixth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_seventh_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_seventh_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.qualitaet_eighth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.qualitaet_eighth_page_button_zurueck);
         button.setOnClickListener(this);
     }
 

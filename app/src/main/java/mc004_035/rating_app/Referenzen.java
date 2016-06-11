@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -68,31 +68,31 @@ public class Referenzen extends Carousel implements View.OnClickListener {
         imageView = (ImageView) findViewById(R.id.referenzen_twelfth_page_back);
         imageView.setOnClickListener(this);
 
-        Button button = null;
+        ImageButton button = null;
 
-        button = (Button) findViewById(R.id.referenzen_first_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_first_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_sec_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_sec_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_third_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_third_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_fourth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_fourth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_fifth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_fifth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_sixth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_sixth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_seventh_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_seventh_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_eighth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_eighth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_ninth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_ninth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_tenth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_tenth_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_eleventh_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_eleventh_page_button_zurueck);
         button.setOnClickListener(this);
-        button = (Button) findViewById(R.id.referenzen_twelfth_page_button_zurueck);
+        button = (ImageButton) findViewById(R.id.referenzen_twelfth_page_button_zurueck);
         button.setOnClickListener(this);
     }
 
@@ -136,7 +136,7 @@ public class Referenzen extends Carousel implements View.OnClickListener {
                 viewFlipper.showPrevious();
                 break;
             }
-            case R.id.referenzen_first_button_zurueck:
+            case R.id.referenzen_first_page_button_zurueck:
             case R.id.referenzen_sec_page_button_zurueck:
             case R.id.referenzen_third_page_button_zurueck:
             case R.id.referenzen_fourth_page_button_zurueck:
