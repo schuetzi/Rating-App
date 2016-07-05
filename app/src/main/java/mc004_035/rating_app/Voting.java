@@ -31,12 +31,12 @@ public class Voting extends Activity implements View.OnClickListener {
         else if (currView == 3)
             flipper.showPrevious();
         addClickListeners(getResources().getStringArray(R.array.sorten));
-        findViewById(R.id.zurueckVoting1).setOnClickListener(this);
-        findViewById(R.id.zurueckVoting2).setOnClickListener(this);
-        findViewById(R.id.zurueckVoting3).setOnClickListener(this);
-        findViewById(R.id.weiterGewinnspiel1).setOnClickListener(this);
-        findViewById(R.id.weiterGewinnspiel2).setOnClickListener(this);
-        findViewById(R.id.weiterGewinnspiel3).setOnClickListener(this);
+        findViewById(R.id.zurueck_Voting_1).setOnClickListener(this);
+        findViewById(R.id.zurueck_Voting_2).setOnClickListener(this);
+        findViewById(R.id.zurueck_Voting_3).setOnClickListener(this);
+        findViewById(R.id.weiter_Gewinnspiel_1).setOnClickListener(this);
+        findViewById(R.id.weiter_Gewinnspiel_2).setOnClickListener(this);
+        findViewById(R.id.weiter_Gewinnspiel_3).setOnClickListener(this);
     }
 
     private void addClickListeners(String[] sorten) {
@@ -163,7 +163,7 @@ public class Voting extends Activity implements View.OnClickListener {
 
     public void onClick(View v) {
         int id = v.getId();
-        if (id == R.id.zurueckVoting1 || id == R.id.zurueckVoting2 || id == R.id.zurueckVoting3) {
+        if (id == R.id.zurueck_Voting_1 || id == R.id.zurueck_Voting_2 || id == R.id.zurueck_Voting_3) {
             onBackPressed();
         } else {
             boolean any_bew_leb = false, any_bew_wue = false, any_bew_wur = false;
@@ -198,34 +198,6 @@ public class Voting extends Activity implements View.OnClickListener {
             Log.e("bla", Arrays.toString(bew_wuerstel));
             Log.e("bla", Arrays.toString(bew_wurst));
 
-            /*if (any_bew_leb)
-                for (int i = 0; i < bew_leberkaese.length; ++i)
-                    if (bew_leberkaese[i] != 0)
-                        keys_leberkaese[bew_leberkaese[i] - 1].add(i);
-            if (any_bew_wue)
-                for (int i = 0; i < bew_wuerstel.length; ++i)
-                    if (bew_wuerstel[i] != 0)
-                        keys_wuerstel[bew_wuerstel[i] - 1].add(i);
-            if (any_bew_wur)
-                for (int i = 0; i < bew_wurst.length; ++i)
-                    if (bew_wurst[i] != 0)
-                        keys_wurst[bew_wurst[i] - 1].add(i);
-            Intent intent = new Intent(this, VotingSubmit.class);
-            intent.putExtra("keys_leberkaese_1", keys_leberkaese[0]);
-            intent.putExtra("keys_leberkaese_2", keys_leberkaese[1]);
-            intent.putExtra("keys_leberkaese_3", keys_leberkaese[2]);
-            intent.putExtra("keys_leberkaese_4", keys_leberkaese[3]);
-            intent.putExtra("keys_leberkaese_5", keys_leberkaese[4]);
-            intent.putExtra("keys_wuerstel_1", keys_wuerstel[0]);
-            intent.putExtra("keys_wuerstel_2", keys_wuerstel[1]);
-            intent.putExtra("keys_wuerstel_3", keys_wuerstel[2]);
-            intent.putExtra("keys_wuerstel_4", keys_wuerstel[3]);
-            intent.putExtra("keys_wuerstel_5", keys_wuerstel[4]);
-            intent.putExtra("keys_wurst_1", keys_wurst[0]);
-            intent.putExtra("keys_wurst_2", keys_wurst[1]);
-            intent.putExtra("keys_wurst_3", keys_wurst[2]);
-            intent.putExtra("keys_wurst_4", keys_wurst[3]);
-            intent.putExtra("keys_wurst_5", keys_wurst[4]);*/
             Intent intent = new Intent(this, VotingSubmit.class);
             intent.putExtra("bew_leberkaese", bew_leberkaese);
             intent.putExtra("bew_wuerstel", bew_wuerstel);

@@ -231,7 +231,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/zurueckVoting1"
+                            android:id="@+id/zurueck_Voting_1"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"
@@ -246,7 +246,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/weiterGewinnspiel1"
+                            android:id="@+id/weiter_Gewinnspiel_1"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"
@@ -411,7 +411,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/zurueckVoting2"
+                            android:id="@+id/zurueck_Voting_2"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"
@@ -426,7 +426,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/weiterGewinnspiel2"
+                            android:id="@+id/weiter_Gewinnspiel_2"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"
@@ -555,7 +555,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/zurueckVoting3"
+                            android:id="@+id/zurueck_Voting_3"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"
@@ -571,7 +571,7 @@
 
                         <ImageButton
                             android:background="@android:color/transparent"
-                            android:id="@+id/weiterGewinnspiel3"
+                            android:id="@+id/weiter_Gewinnspiel_3"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:scaleType="fitCenter"

@@ -44,78 +44,9 @@ public class VotingSubmit extends Activity implements View.OnClickListener {
         teilnbed_view.setBackgroundColor(0);
         intent = getIntent();
         findViewById(R.id.absenden).setOnClickListener(this);
-        findViewById(R.id.zurueckAbsenden).setOnClickListener(this);
+        findViewById(R.id.zurueck_Absenden).setOnClickListener(this);
         findViewById(R.id.teilnbed).setOnClickListener(this);
-        findViewById(R.id.zurueckWebViewButton).setOnClickListener(this);
-        /*keys_leberkaese = new ArrayList[5];
-        keys_wuerstel = new ArrayList[5];
-        keys_wurst = new ArrayList[5];
-        k_leb_empty = true; k_wue_empty = true; k_wur_empty = true;
-        for (int i = 1; i < 6; ++i) {
-            keys_leberkaese[i - 1] = intent.getIntegerArrayListExtra("keys_leberkaese_" + i);
-            if (keys_leberkaese[i - 1].size() > 0)
-                k_leb_empty = false;
-            keys_wuerstel[i - 1] = intent.getIntegerArrayListExtra("keys_wuerstel_" + i);
-            if (keys_wuerstel[i - 1].size() > 0)
-                k_wue_empty = false;
-            keys_wurst[i - 1] = intent.getIntegerArrayListExtra("keys_wurst_" + i);
-            if (keys_wurst[i - 1].size() > 0)
-                k_wur_empty = false;
-        }
-        if (!(k_leb_empty && k_wue_empty && k_wur_empty)) {
-            int count = 0;
-            String packageName = getPackageName();
-            Resources resources = getResources();
-            String[] sorten = resources.getStringArray(R.array.sorten);
-            if (!k_leb_empty)
-                outerLoop: for (int i = 4; i >= 0; --i)
-                    for (int j = 0; j < keys_leberkaese[i].size(); ++j) {
-                        ++count;
-                        int index = (int) keys_leberkaese[i].get(j);
-                        ((ImageView) findViewById(
-                                resources.getIdentifier("BildLeberkaese" + count, "id", packageName)
-                        )).setBackgroundResource(
-                                resources.getIdentifier(format(sorten[index]), "drawable", packageName)
-                        );
-                        ((RatingBar) findViewById(
-                                resources.getIdentifier("BarLeberkaese" + count, "id", packageName)
-                        )).setRating((float) (i + 1));
-                        if (count == 5)
-                            break outerLoop;
-                    }
-            if (!k_wue_empty)
-                outerLoop: for (int i = 4; i >= 0; --i)
-                    for (int j = 0; j < keys_wuerstel[i].size(); ++j) {
-                        ++count;
-                        int index = (int) keys_wuerstel[i].get(j);
-                        ((ImageView) findViewById(
-                                resources.getIdentifier("BildWuerstel" + count, "id", packageName)
-                        )).setBackgroundResource(
-                                resources.getIdentifier(format(sorten[index + 13]), "drawable", packageName)
-                        );
-                        ((RatingBar) findViewById(
-                                resources.getIdentifier("BarLeberkaese" + count, "id", packageName)
-                        )).setRating((float) (i + 1));
-                        if (count == 5)
-                            break outerLoop;
-                    }
-            if (!k_wur_empty)
-                outerLoop: for (int i = 4; i >= 0; --i)
-                    for (int j = 0; j < keys_wuerstel[i].size(); ++j) {
-                        ++count;
-                        int index = (int) keys_wuerstel[i].get(j);
-                        ((ImageView) findViewById(
-                                resources.getIdentifier("BildWuerstel" + count, "id", packageName)
-                        )).setBackgroundResource(
-                                resources.getIdentifier(format(sorten[index + 22]), "drawable", packageName)
-                        );
-                        ((RatingBar) findViewById(
-                                resources.getIdentifier("BarLeberkaese" + count, "id", packageName)
-                        )).setRating((float) (i + 1));
-                        if (count == 5)
-                            break outerLoop;
-                    }
-        }*/
+        findViewById(R.id.zurueck_WebView_Button).setOnClickListener(this);
     }
 
     @Override
@@ -245,9 +176,9 @@ public class VotingSubmit extends Activity implements View.OnClickListener {
                     findViewById(R.id.teilnbed_view).setVisibility(View.VISIBLE);
                     findViewById(R.id.zurueckWebView).setVisibility(View.VISIBLE);
                     teilnbed_shown = true;
-                } else if (v.getId() == R.id.zurueckAbsenden) {
+                } else if (v.getId() == R.id.zurueck_Absenden) {
                     finish();
-                } else if (v.getId() == R.id.zurueckWebViewButton) {
+                } else if (v.getId() == R.id.zurueck_WebView_Button) {
                     findViewById(R.id.layout).setVisibility(View.VISIBLE);
                     findViewById(R.id.teilnbed_view).setVisibility(View.INVISIBLE);
                     findViewById(R.id.zurueckWebView).setVisibility(View.INVISIBLE);
@@ -288,7 +219,7 @@ public class VotingSubmit extends Activity implements View.OnClickListener {
     @Override
     public void onBackPressed() {
         if (teilnbed_shown)
-            findViewById(R.id.zurueckWebViewButton).performClick();
+            findViewById(R.id.zurueck_WebView_Button).performClick();
         else
             finish();
     }

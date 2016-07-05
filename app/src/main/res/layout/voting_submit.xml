@@ -28,7 +28,7 @@
 
         <ImageButton
             android:background="@android:color/transparent"
-            android:id="@+id/zurueckWebViewButton"
+            android:id="@+id/zurueck_WebView_Button"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:scaleType="fitCenter"
@@ -405,7 +405,7 @@
                 android:layout_height="40dp">
 
                 <ImageButton
-                    android:id="@+id/zurueckAbsenden"
+                    android:id="@+id/zurueck_Absenden"
                     android:background="@android:color/transparent"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
